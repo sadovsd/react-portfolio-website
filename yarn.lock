@@ -3872,7 +3872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.13":
+"autoprefixer@npm:^10.4.13, autoprefixer@npm:^10.4.14":
   version: 10.4.14
   resolution: "autoprefixer@npm:10.4.14"
   dependencies:
@@ -9627,10 +9627,13 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
+    autoprefixer: ^10.4.14
+    postcss: ^8.4.25
     react: ^18.2.0
     react-dom: ^18.2.0
     react-router-dom: ^6.14.1
     react-scripts: ^5.0.1
+    tailwindcss: ^3.3.2
     web-vitals: ^2.1.0
   languageName: unknown
   linkType: soft
@@ -10518,7 +10521,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.5, postcss@npm:^8.4.21, postcss@npm:^8.4.23, postcss@npm:^8.4.4":
+"postcss@npm:^8.3.5, postcss@npm:^8.4.21, postcss@npm:^8.4.23, postcss@npm:^8.4.25, postcss@npm:^8.4.4":
   version: 8.4.25
   resolution: "postcss@npm:8.4.25"
   dependencies:
@@ -12128,7 +12131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.2":
+"tailwindcss@npm:^3.0.2, tailwindcss@npm:^3.3.2":
   version: 3.3.2
   resolution: "tailwindcss@npm:3.3.2"
   dependencies:
