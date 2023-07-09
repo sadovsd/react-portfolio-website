@@ -185,7 +185,7 @@ class Resume extends Component {
         const downShiftCertifications = showCourses3 ? { marginTop: '200px' } : {};
 
         return (
-            <div className='container  mt-12 mb-20'>
+            <div className='container ml-[160px] mt-[7rem] mb-20'>
                 <h1 className='ml-[250px] text-left'>Education</h1>
                 <hr className='ml-[250px] mt-4 w-[700px]'></hr>
 
@@ -414,8 +414,8 @@ class Resume extends Component {
                 <div style={downShiftCertifications}>
                     <h1 className='ml-[250px] mt-16 text-left'>Certifications</h1>
                     <hr className='ml-[250px] mt-4 w-[700px]'></hr>
-                    <div className='flex flex-row ml-[250px] mt-6 shadow w-[400px]'>
-                        <div>
+                    <div className='flex flex-row ml-[250px] mt-6 shadow w-[450px]'>
+                        <div className='basis-3/4'>
                             <h3 className='mt-4'>SAS Certified Specialist: Base Programming Using SAS 9.4.</h3>
                             <div className='flex flex-row mt-4 justify-center'>
                                 <p className='text-green-700 font-medium'>Issued</p>

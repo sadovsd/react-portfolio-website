@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = ( {children} ) => {
     
@@ -20,6 +20,12 @@ const Header = ( {children} ) => {
         setActiveLink(link);
         console.log('active link is..', link)
     };
+
+    useEffect(() => {
+        // Set active link to '/' when the component mounts
+        setActiveLink('/');
+    }, []);
+    
 
     return(
         <div>

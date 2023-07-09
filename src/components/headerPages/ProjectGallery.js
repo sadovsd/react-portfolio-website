@@ -80,8 +80,8 @@ const Project = props => {
 const Project4 = () =>  (
     <div className='container mt-20 mb-20'>
         <h1 className=''>Highlighted Projects</h1>
-        <div className='flex mt-7 justify-center'>
-            <h3 className='mr-2'>Just some</h3>
+        <div className='flex mt-10 justify-center'>
+            <h3 className='mr-2'>Some</h3>
             <h3 className='text-blue-500 mr-2'>data science</h3>
             <h3 className='mr-2'>and</h3>
             <h3 className='text-blue-500 mr-2'>software development</h3>
