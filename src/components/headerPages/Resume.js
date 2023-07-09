@@ -185,7 +185,7 @@ class Resume extends Component {
         const downShiftCertifications = showCourses3 ? { marginTop: '200px' } : {};
 
         return (
-            <div className='container ml-[200px] mt-20 mb-20'>
+            <div className='container  mt-12 mb-20'>
                 <h1 className='ml-[250px] text-left'>Education</h1>
                 <hr className='ml-[250px] mt-4 w-[700px]'></hr>
 
@@ -435,10 +435,11 @@ class Resume extends Component {
                                     More Info
                                 </a> */}
                                 <span onClick={() => window.open("https://www.sas.com/en_us/certification/credentials/foundation-tools/base-programming-specialist.html", "_blank")}
-                                    className=" px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 hover:text-white">
+                                    className="cursor-pointer px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 hover:text-white"
+                                >
                                     More Info
                                 </span>
-                                <span className=" px-4 py-2 bg-gray-300 text-gray-700 font-semibold rounded-lg shadow hover:bg-gray-400 hover:text-gray-800">
+                                <span className="cursor-pointer px-4 py-2 bg-gray-300 text-gray-700 font-semibold rounded-lg shadow hover:bg-gray-400 hover:text-gray-800">
                                 View Badge
                                 </span>
                             </div>

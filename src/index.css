@@ -6,7 +6,7 @@
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -30,6 +30,10 @@ h3 {
   font-size: 19px;
   font-weight: 500;
   color: #3a3c3e;
+}
+
+.custom-cursor {
+  cursor: pointer;
 }
 
 .header-link {
