@@ -45,8 +45,8 @@ class Resume extends Component {
 
     handleOutsideClick1 = (event) => {
         // This is how I handle currently unexplicable behavior...
-        if (event.target.id == 'collapse1' || event.target.tagName == 'path') {
-            if (event.target.tagName == 'path') {
+        if (event.target.id === 'collapse1' || event.target.tagName === 'path') {
+            if (event.target.tagName === 'path') {
                 console.log('Weird thing happened where collapse1 element changes id and/or courseName becomes undefined....')
             }
             this.setState({ showDescription1: false, activeIndex1: -1 });
@@ -90,8 +90,8 @@ class Resume extends Component {
     };
 
     handleOutsideClick2 = (event) => {
-        if (event.target.id == 'collapse2' || event.target.tagName == 'path') {
-            if (event.target.tagName == 'path') {
+        if (event.target.id === 'collapse2' || event.target.tagName === 'path') {
+            if (event.target.tagName === 'path') {
                 console.log('Weird thing happened where collapse2 element changes id and/or courseName becomes undefined....')
             }
             this.setState({ showDescription2: false });
@@ -130,8 +130,8 @@ class Resume extends Component {
 
 
     handleOutsideClick3 = (event) => {
-        if (event.target.id == 'collapse3' || event.target.tagName == 'path') {
-            if (event.target.tagName == 'path') {
+        if (event.target.id === 'collapse3' || event.target.tagName === 'path') {
+            if (event.target.tagName === 'path') {
                 console.log('Weird thing happened where collapse2 element changes id and/or courseName becomes undefined....')
             }
             this.setState({ showDescription3: false });
