@@ -10,7 +10,7 @@ const Project = props => {
     const { id, title, date, tags, image, description, technologies, hasApp } = props.project;
     return (
         <div className=' relative flex flex-col items-center rounded-2xl w-[37rem] overflow-hidden shadow-md transition-all duration-100 transform-gpu hover:-translate-y-2 hover:shadow-lg'>
-            <img className='h-[22rem] mt-4' src={image} alt='project image'></img>
+            <img className='h-[22rem] mt-4' src={image} alt='project'></img>
             <div className='w-[33rem] mt-8 mb-28 text-left'>
                 <h2>{title}</h2>
 

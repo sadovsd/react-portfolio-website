@@ -1,5 +1,3 @@
-import react, { useState } from 'react';
-
 const Applications = () => {
     return (
         <div className='container mt-20 '>
