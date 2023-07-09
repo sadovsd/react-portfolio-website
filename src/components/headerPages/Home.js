@@ -36,7 +36,7 @@ class Home extends Component {
                     exit={{ opacity: 0, transition: { duration: 1.5 } }}>
                         <div className='basis-5/12 md:pl-[100px] md:pt-[100px]'>
                             {/* tracking-[10px]  */}
-                            <h1 className='mb-12 text-[5.3rem] tracking-[.5rem]'>DAVYD SADOVSKYY</h1>
+                            <h1 className='mb-12 text-[60px] tracking-[.5rem]'>DAVYD SADOVSKYY</h1>
                             <div className='mt-40'>
                                 <IntroAnimate onIntroAnimationComplete={this.handleIntroAnimationComplete} />
                                 {introAnimationComplete && showTitles && <TitlesAnimate onTitleAnimationComplete={this.handleTitleAnimationComplete} />}
