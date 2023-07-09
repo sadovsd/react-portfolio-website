@@ -428,7 +428,7 @@ class Resume extends Component {
                                 <p>ALDKJHFLSF48373</p>
                             </div>
                             <div className='flex flex-row justify-between text-[1.25rem] ml-28 mr-28 mt-4 mb-5'>
-                                <a href='https://www.sas.com/en_us/certification/credentials/foundation-tools/base-programming-specialist.html#exam-details'
+                                <a href='https://www.sas.com/en_us/certification/credentials/foundation-tools/base-programming-specialist.html'
                                     target="_blank"
                                     rel="noreferrer"
                                     className=" px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 hover:text-white">
