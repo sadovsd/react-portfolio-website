@@ -22,18 +22,18 @@ const Footer = ( {children} ) => {
                     <EmailIcon className='relative h-[3.5rem] w-[3.5rem] text-materialUI hover:text-neutral-500' />
                 </button>
 
-                <a target="_blank" href='https://www.linkedin.com/in/davyd-sadovskyy-84678a105'>
+                <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/davyd-sadovskyy-84678a105'>
                     <LinkedinIcon className='h-[3.5rem] w-[3.5rem] text-materialUI hover:text-linkedIn' />
                 </a>
 
-                <a target="_blank" href='https://github.com/sadovsd'>
+                <a target="_blank" rel="noreferrer" href='https://github.com/sadovsd'>
                     <GithubIcon className='h-[3.5rem] w-[3.5rem] text-materialUI hover:text-neutral-950' />
                 </a>
-                <a target="_blank" href='https://medium.com/'>
+                <a target="_blank" rel="noreferrer" href='https://medium.com/'>
                     <MediumIcon className='h-[4rem] w-[4rem] text-materialUI hover:text-neutral-950' />
                 </a>
 
-                <a target="_blank" href='https://www.youtube.com/'>
+                <a target="_blank" rel="noreferrer" href='https://www.youtube.com/'>
                     <YoutubeIcon className='h-[3.5rem] w-[3.5rem] text-materialUI hover:text-red-600' />
                 </a>
                 {copied && 
