@@ -1,13 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 45px;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  color: #3a3c3e;
 }
+
+h2 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 23px;
+  font-weight: 500;
+  color: #3a3c3e;
+}
+
+h3 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 19px;
+  font-weight: 500;
+  color: #3a3c3e;
+}
+
+.header-link {
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.header-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #0072E5;
+  transition: width 0.3s ease-out;
+}
+
+.header-link:hover::before {
+  width: 100%;
+}
+
+.header-link.active::before {
+  width: 100%;
+}
+
+.course-list {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+}
+
+.course-descr-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: .13rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.course-descr-body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.title-fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: .500s;
+}
+
+.title-fade-in {
+  opacity: 100;
+  animation-name: fade-in;
+  animation-duration: .500s;
+}
+
+.line {
+  width: 100%;
+  height: .5px;
+  background-color: #4d545c;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: none;
+}
+
+.line:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* this is how we define animations in css */
+@keyframes fade-out {
+  from {opacity: 100}
+  to {opacity: 0}
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 100}
+}
+
+
