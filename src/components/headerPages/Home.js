@@ -48,11 +48,11 @@ class Home extends Component {
                         initial={{ opacity: 0, x: 140 }} 
                         animate={{ opacity: 1, x: 0, transition: { duration: 1.5 } }} 
                         exit={{ opacity: 0, x: -100 }}>
-                        <img src={stoman} alt='stoman'/>
+                        <img src={stoman} alt='dude being productive'/>
                     </motion.div>
                 </div>
                 <div className='flex flex-col md:flex-row mt-40 mb-32 border-soli'>
-                    <img src={headshot} className='h-[400px] p-16' />
+                    <img src={headshot} alt='headshot' className='h-[400px] p-16' />
                     <p className='text-[25px] p-12'>
                     </p>
                 </div>
