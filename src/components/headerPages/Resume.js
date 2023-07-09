@@ -428,15 +428,19 @@ class Resume extends Component {
                                 <p>ALDKJHFLSF48373</p>
                             </div>
                             <div className='flex flex-row justify-between text-[1.25rem] ml-28 mr-28 mt-4 mb-5'>
-                                <a href='https://www.sas.com/en_us/certification/credentials/foundation-tools/base-programming-specialist.html'
+                                {/* <a href='https://www.sas.com/en_us/certification/credentials/foundation-tools/base-programming-specialist.html'
                                     target="_blank"
                                     rel="noreferrer"
                                     className=" px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 hover:text-white">
                                     More Info
-                                </a>
-                                <a className=" px-4 py-2 bg-gray-300 text-gray-700 font-semibold rounded-lg shadow hover:bg-gray-400 hover:text-gray-800">
+                                </a> */}
+                                <span onClick={() => window.open("https://www.sas.com/en_us/certification/credentials/foundation-tools/base-programming-specialist.html", "_blank")}
+                                    className=" px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 hover:text-white">
+                                    More Info
+                                </span>
+                                <span className=" px-4 py-2 bg-gray-300 text-gray-700 font-semibold rounded-lg shadow hover:bg-gray-400 hover:text-gray-800">
                                 View Badge
-                                </a>
+                                </span>
                             </div>
                         </div>
                         <div className='basis-1/4 mr-6 mt-[35px]'>
