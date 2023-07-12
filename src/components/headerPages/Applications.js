@@ -1,8 +1,11 @@
+import Form from "../applications/form";
+
 const Applications = () => {
     return (
         <div className='container mt-20 '>
             <h1>Applications</h1>
-            <h3 className='mt-12'>Coming soon...</h3>
+            <h2 className="mt-20">CPI Trend Viewer</h2>
+            <Form />
         </div>
     )
 }
