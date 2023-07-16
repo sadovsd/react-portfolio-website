@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import PlotlyGraph from './plotlyGraph';
 
 function Form() {
     const [form, setForm] = useState({
         polynomialDegree: "",
     });
 
-    const[result, setResult] = useState('');
+    const [csvData, setCsvData] = useState('');
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -17,31 +18,26 @@ function Form() {
 
         setIsLoading(true);
 
-        //   console.log("Form submitted");
-        //   console.log(form);
-
-        // Send to Database/Send to Rest API
-        const form_data = new FormData();
-        // form_data.append('1', form.polynomialDegree);
-        form_data.append('1', form.polynomialDegree);
-
-        console.log('formdata...', form_data.keys)
-        fetch('http://127.0.0.1:5000/results', {
-            method: 'POST',
-            body: form_data
+        const url = new URL('http://127.0.0.1:5000');
+        url.searchParams.append('1', form.polynomialDegree); // Add the query parameter
+    
+        fetch(url, {
+          method: 'POST' // im still confused with post vs get- both worked here...
         })
         .then(response => {
             // verify if the response status is within the range of 200-299, which typically indicates a successful response. 
             if (response.ok) { 
+                // console.log('response status was succesful!!!!!:', response.text());
                 return response.text();
             // if the response status is not within the successful range (e.g., 400, 500, etc.) - throw an error
             } else {
                 throw new Error('Backend Error');
             }
         })
-        .then(html => {
-            setResult(html);
+        .then(data => {
+            setCsvData(data);
             setIsLoading(false);
+            setBackendError(false); // Reset backendError state if it was previously true
         })
         .catch(error => {
             console.error("Error:", error);
@@ -65,7 +61,9 @@ function Form() {
             ) : backendError ? (
                 <div>Error occurred while fetching data.</div>
             ) : (
-                result && <div dangerouslySetInnerHTML={{ __html: result }} />
+                // result && <div dangerouslySetInnerHTML={{ __html: result }} />
+                // result && <img src={`data:image/png;base64,${result}`} alt="Result" />
+                csvData && <PlotlyGraph csvData={csvData} /> 
             )}
         </form>
 

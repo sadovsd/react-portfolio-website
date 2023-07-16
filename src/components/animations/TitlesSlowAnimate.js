@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const TITLES = [
-    'Clear',
+    // 'Clear',
     'Driven to be the change'
 ];
 
