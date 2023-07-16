@@ -18,7 +18,7 @@ function Form() {
 
         setIsLoading(true);
 
-        const url = new URL('http://127.0.0.1:5000');
+        const url = new URL('http://flask-test2.azurewebsites.net');
         url.searchParams.append('1', form.polynomialDegree); // Add the query parameter
     
         fetch(url, {
