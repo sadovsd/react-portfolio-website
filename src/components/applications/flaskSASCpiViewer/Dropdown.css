@@ -1,0 +1,181 @@
+
+.input-group {
+  position: relative;
+}
+
+.input {
+  padding: 0px;
+}
+
+.label {
+  position: absolute;
+  bottom: 10px; /* Adjust as necessary */
+  left: 0px; /* Adjust as necessary */
+  transition: all 0.2s ease;
+  opacity: 0;
+  background-color: white;
+  padding: 2px 4px; /* Adjust as necessary */
+  /* z-index: 1; To ensure the label appears above other elements */
+}
+
+.input:not(:placeholder-shown) + .label,
+.input:focus + .label {
+  transform: translateY(-40px); /* Adjust as necessary */
+  opacity: 1;
+  color:#3a3c3e;
+}
+
+.label--float {
+  transform: translateY(-20px); /* Adjust as necessary */
+  opacity: 1;
+  color:#3a3c3e;
+}
+
+
+
+.dropdown {
+    width: 250px;
+    position: relative;
+    text-align: left;
+  }
+  .dropdown__container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: absolute; 
+    width: 100%; 
+    background-color: white; 
+  }
+
+  .dropdown__option {
+    padding: 2px;
+    padding-left: 4px;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+}
+
+  .dropdown__sub-option {
+      max-width: 300px; /* Adjust as needed */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+    .dropdown__sub-option:hover,
+.dropdown__sub-option--active {
+    background-color: #F0F7FF !important; /* Light blue */
+    /* color: #fff; */
+    border-radius: 5px;
+    font-weight: 400;
+  }
+  
+  
+  .dropdown__option:hover {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .dropdown__option--active {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    
+  }
+  
+  .dropdown__sub-options {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-height: 310px; 
+    overflow-y: auto; 
+    z-index: 9999; 
+    scrollbar-width: thin;
+  }
+  
+  .dropdown__option--active .dropdown__sub-options {
+    display: block;
+  }
+
+  div.dropdown__option--selected {
+    color: #3a3c3e; /* adjust this color as needed */
+  }
+  
+
+  .dropdown__sub-option:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .dropdown__input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+
+  .dropdown__input--focused {
+    padding: 9px;
+    border: 2px solid #2684ff; 
+  }
+
+  .dropdown__arrow {
+    fill: #888; 
+    transition: fill 0.2s ease; 
+  }
+  
+  .dropdown__input:hover .dropdown__arrow,
+.dropdown__input:focus .dropdown__arrow {
+  fill: #555; 
+  stroke-width: 1;
+  stroke: #555; 
+}
+
+.dropdown__arrow--bold {
+  stroke-width: 1; /* Adjust as needed */
+  stroke: #555; /* Should be the same as fill */
+}
+
+  
+  .dropdown__placeholder {
+    color: #888;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+  
+  .dropdown__input:hover .dropdown__placeholder,
+  .dropdown__input:focus .dropdown__placeholder {
+    opacity: 0.5;
+  }
+  
+  .dropdown__chevron-right {
+      position: absolute;
+      right: 0.5em; /* adjust as needed */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+
+  .dropdown__option--active .dropdown__chevron-right,
+.dropdown__option:hover .dropdown__chevron-right {
+  /* Adjust these properties */
+  stroke-width: 1; /* Adjust as needed */
+  stroke: #555; /* Should be the same as fill */
+}

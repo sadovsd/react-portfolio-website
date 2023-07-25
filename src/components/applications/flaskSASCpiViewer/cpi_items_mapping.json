@@ -1,0 +1,2020 @@
+{
+  "Other": [
+    {
+      "item_code": "AA0",
+      "item_name": "All items - old base",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "AA0R",
+      "item_name": "Purchasing power of the consumer dollar - old base",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0",
+      "item_name": "All items",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0E",
+      "item_name": "Energy",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0L1",
+      "item_name": "All items less food",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0L12",
+      "item_name": "All items less food and shelter",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0L12E",
+      "item_name": "All items less food, shelter, and energy",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0L12E4",
+      "item_name": "All items less food, shelter, energy, and used cars and trucks",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0L1E",
+      "item_name": "All items less food and energy",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0L2",
+      "item_name": "All items less shelter",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0L5",
+      "item_name": "All items less medical care",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0LE",
+      "item_name": "All items less energy",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA0R",
+      "item_name": "Purchasing power of the consumer dollar",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SA311",
+      "item_name": "Apparel less footwear",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAC",
+      "item_name": "Commodities",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SACE",
+      "item_name": "Energy commodities",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SACL1",
+      "item_name": "Commodities less food",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SACL11",
+      "item_name": "Commodities less food and beverages",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SACL1E",
+      "item_name": "Commodities less food and energy commodities",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SACL1E4",
+      "item_name": "Commodities less food, energy, and used cars and trucks",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAD",
+      "item_name": "Durables",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAN",
+      "item_name": "Nondurables",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAN1D",
+      "item_name": "Domestically produced farm food",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SANL1",
+      "item_name": "Nondurables less food",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SANL11",
+      "item_name": "Nondurables less food and beverages",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SANL113",
+      "item_name": "Nondurables less food, beverages, and apparel",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SANL13",
+      "item_name": "Nondurables less food and apparel",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAS",
+      "item_name": "Services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAS24",
+      "item_name": "Utilities and public transportation",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAS2RS",
+      "item_name": "Rent of shelter",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAS367",
+      "item_name": "Other services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SAS4",
+      "item_name": "Transportation services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SASL2RS",
+      "item_name": "Services less rent of shelter",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SASL5",
+      "item_name": "Services less medical care services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SASLE",
+      "item_name": "Services less energy services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SS27061",
+      "item_name": "Land-line intrastate toll calls",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SS5702",
+      "item_name": "Inpatient hospital services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SS5703",
+      "item_name": "Outpatient hospital services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SS68021",
+      "item_name": "Checking account and other bank services",
+      "source_file": "unkown"
+    },
+    {
+      "item_code": "SS68023",
+      "item_name": "Tax return preparation and other accounting fees",
+      "source_file": "unkown"
+    }
+  ],
+  "Apparel": [
+    {
+      "item_code": "SAA",
+      "item_name": "All Apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SAA1",
+      "item_name": "Men's and boys' apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SAA2",
+      "item_name": "Women's and girls' apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAA",
+      "item_name": "Men's apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAA01",
+      "item_name": "Men's suits, sport coats, and outerwear",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAA02",
+      "item_name": "Men's underwear, nightwear, swimwear and accessories",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAA03",
+      "item_name": "Men's shirts and sweaters",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAA04",
+      "item_name": "Men's pants and shorts",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAB",
+      "item_name": "Boys' apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAC",
+      "item_name": "Women's apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAC01",
+      "item_name": "Women's outerwear",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAC02",
+      "item_name": "Women's dresses",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAC03",
+      "item_name": "Women's suits and separates",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAC04",
+      "item_name": "Women's underwear, nightwear, swimwear and accessories",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAD",
+      "item_name": "Girls' apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAE",
+      "item_name": "Footwear",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAE01",
+      "item_name": "Men's footwear",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAE02",
+      "item_name": "Boys' and girls' footwear",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAE03",
+      "item_name": "Women's footwear",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAF",
+      "item_name": "Infants' and toddlers' apparel",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAG",
+      "item_name": "Jewelry and watches",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAG01",
+      "item_name": "Watches",
+      "source_file": "cu.data.13.USApparel"
+    },
+    {
+      "item_code": "SEAG02",
+      "item_name": "Jewelry",
+      "source_file": "cu.data.13.USApparel"
+    }
+  ],
+  "Education and Communication": [
+    {
+      "item_code": "SAE",
+      "item_name": "All Education and communication",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SAE1",
+      "item_name": "Education",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SAE2",
+      "item_name": "Communication",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SAE21",
+      "item_name": "Information and information processing",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SAEC",
+      "item_name": "Education and communication commodities",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SAES",
+      "item_name": "Education and communication services",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEA",
+      "item_name": "Educational books and supplies",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEB",
+      "item_name": "Tuition, other school fees, and childcare",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEB01",
+      "item_name": "College tuition and fees",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEB02",
+      "item_name": "Elementary and high school tuition and fees",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEB03",
+      "item_name": "Day care and preschool",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEB04",
+      "item_name": "Technical and business school tuition and fees",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEC",
+      "item_name": "Postage and delivery services",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEC01",
+      "item_name": "Postage",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEC02",
+      "item_name": "Delivery services",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEED",
+      "item_name": "Telephone services",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEED03",
+      "item_name": "Wireless telephone services",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEED04",
+      "item_name": "Residential telephone services",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEE",
+      "item_name": "Information technology, hardware and services",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEE01",
+      "item_name": "Computers, peripherals, and smart home assistants",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEE02",
+      "item_name": "Computer software and accessories",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEE03",
+      "item_name": "Internet services and electronic information providers",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEE04",
+      "item_name": "Telephone hardware, calculators, and other consumer informatio",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SEEEC",
+      "item_name": "Information technology commodities",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SS27051",
+      "item_name": "Land-line interstate toll calls",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SSEA011",
+      "item_name": "College textbooks",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    },
+    {
+      "item_code": "SSEE041",
+      "item_name": "Smartphones",
+      "source_file": "cu.data.17.USEducationAndCommunication"
+    }
+  ],
+  "Food and Beverage": [
+    {
+      "item_code": "SAF",
+      "item_name": "All Food and beverages",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF1",
+      "item_name": "Food",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF11",
+      "item_name": "Food at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF111",
+      "item_name": "Cereals and bakery products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF112",
+      "item_name": "Meats, poultry, fish, and eggs",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF1121",
+      "item_name": "Meats, poultry, and fish",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF11211",
+      "item_name": "Meats",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF113",
+      "item_name": "Fruits and vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF1131",
+      "item_name": "Fresh fruits and vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF114",
+      "item_name": "Nonalcoholic beverages and beverage materials",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF115",
+      "item_name": "Other food at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SAF116",
+      "item_name": "Alcoholic beverages",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFA",
+      "item_name": "Cereals and cereal products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFA01",
+      "item_name": "Flour and prepared flour mixes",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFA02",
+      "item_name": "Breakfast cereal",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFA03",
+      "item_name": "Rice, pasta, cornmeal",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFB",
+      "item_name": "Bakery products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFB01",
+      "item_name": "Bread",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFB02",
+      "item_name": "Fresh biscuits, rolls, muffins",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFB03",
+      "item_name": "Cakes, cupcakes, and cookies",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFB04",
+      "item_name": "Other bakery products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFC",
+      "item_name": "Beef and veal",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFC01",
+      "item_name": "Uncooked ground beef",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFC02",
+      "item_name": "Uncooked beef roasts",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFC03",
+      "item_name": "Uncooked beef steaks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFC04",
+      "item_name": "Uncooked other beef and veal",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFD",
+      "item_name": "Pork",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFD01",
+      "item_name": "Bacon, breakfast sausage, and related products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFD02",
+      "item_name": "Ham",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFD03",
+      "item_name": "Pork chops",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFD04",
+      "item_name": "Other pork including roasts, steaks, and ribs",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFE",
+      "item_name": "Other meats",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFF",
+      "item_name": "Poultry",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFF01",
+      "item_name": "Chicken",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFF02",
+      "item_name": "Other uncooked poultry including turkey",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFG",
+      "item_name": "Fish and seafood",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFG01",
+      "item_name": "Fresh fish and seafood",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFG02",
+      "item_name": "Processed fish and seafood",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFH",
+      "item_name": "Eggs",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFJ",
+      "item_name": "Dairy and related products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFJ01",
+      "item_name": "Milk",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFJ02",
+      "item_name": "Cheese and related products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFJ03",
+      "item_name": "Ice cream and related products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFJ04",
+      "item_name": "Other dairy and related products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFK",
+      "item_name": "Fresh fruits",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFK01",
+      "item_name": "Apples",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFK02",
+      "item_name": "Bananas",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFK03",
+      "item_name": "Citrus fruits",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFK04",
+      "item_name": "Other fresh fruits",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFL",
+      "item_name": "Fresh vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFL01",
+      "item_name": "Potatoes",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFL02",
+      "item_name": "Lettuce",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFL03",
+      "item_name": "Tomatoes",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFL04",
+      "item_name": "Other fresh vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFM",
+      "item_name": "Processed fruits and vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFM01",
+      "item_name": "Canned fruits and vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFM02",
+      "item_name": "Frozen fruits and vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFM03",
+      "item_name": "Other processed fruits and vegetables including dried",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFN",
+      "item_name": "Juices and nonalcoholic drinks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFN01",
+      "item_name": "Carbonated drinks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFN02",
+      "item_name": "Frozen noncarbonated juices and drinks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFN03",
+      "item_name": "Nonfrozen noncarbonated juices and drinks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFP",
+      "item_name": "Beverage materials including coffee and tea",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFP01",
+      "item_name": "Coffee",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFP02",
+      "item_name": "Other beverage materials including tea",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFR",
+      "item_name": "Sugar and sweets",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFR01",
+      "item_name": "Sugar and sugar substitutes",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFR02",
+      "item_name": "Candy and chewing gum",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFR03",
+      "item_name": "Other sweets",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFS",
+      "item_name": "Fats and oils",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFS01",
+      "item_name": "Butter and margarine",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFS02",
+      "item_name": "Salad dressing",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFS03",
+      "item_name": "Other fats and oils including peanut butter",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFT",
+      "item_name": "Other foods",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFT01",
+      "item_name": "Soups",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFT02",
+      "item_name": "Frozen and freeze dried prepared foods",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFT03",
+      "item_name": "Snacks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFT04",
+      "item_name": "Spices, seasonings, condiments, sauces",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFT05",
+      "item_name": "Baby food",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFT06",
+      "item_name": "Other miscellaneous foods",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFV",
+      "item_name": "Food away from home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFV01",
+      "item_name": "Full service meals and snacks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFV02",
+      "item_name": "Limited service meals and snacks",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFV03",
+      "item_name": "Food at employee sites and schools",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFV04",
+      "item_name": "Food from vending machines and mobile vendors",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFV05",
+      "item_name": "Other food away from home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFW",
+      "item_name": "Alcoholic beverages at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFW01",
+      "item_name": "Beer, ale, and other malt beverages at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFW02",
+      "item_name": "Distilled spirits at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFW03",
+      "item_name": "Wine at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SEFX",
+      "item_name": "Alcoholic beverages away from home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS01031",
+      "item_name": "Rice",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS02011",
+      "item_name": "White bread",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS02021",
+      "item_name": "Bread other than white",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS02041",
+      "item_name": "Fresh cakes and cupcakes",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS02042",
+      "item_name": "Cookies",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS02063",
+      "item_name": "Fresh sweetrolls, coffeecakes, doughnuts",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS0206A",
+      "item_name": "Crackers, bread, and cracker products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS0206B",
+      "item_name": "Frozen and refrigerated bakery products, pies, tarts, turnover",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS04011",
+      "item_name": "Bacon and related products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS04012",
+      "item_name": "Breakfast sausage and related products",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS04031",
+      "item_name": "Ham, excluding canned",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS05011",
+      "item_name": "Frankfurters",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS05014",
+      "item_name": "Lamb and organ meats",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS05015",
+      "item_name": "Lamb and mutton",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS0501A",
+      "item_name": "Lunchmeats",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS06011",
+      "item_name": "Fresh whole chicken",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS06021",
+      "item_name": "Fresh and frozen chicken parts",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS07011",
+      "item_name": "Shelf stable fish and seafood",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS07021",
+      "item_name": "Frozen fish and seafood",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS09011",
+      "item_name": "Fresh whole milk",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS09021",
+      "item_name": "Fresh milk other than whole",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS10011",
+      "item_name": "Butter",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS11031",
+      "item_name": "Oranges, including tangerines",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS13031",
+      "item_name": "Canned fruits",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS14011",
+      "item_name": "Frozen vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS14021",
+      "item_name": "Canned vegetables",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS14022",
+      "item_name": "Dried beans, peas, and lentils",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS16011",
+      "item_name": "Margarine",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS16014",
+      "item_name": "Peanut butter",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS17031",
+      "item_name": "Roasted coffee",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS17032",
+      "item_name": "Instant coffee",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS18041",
+      "item_name": "Salt and other seasonings and spices",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS18042",
+      "item_name": "Olives, pickles, relishes",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS18043",
+      "item_name": "Sauces and gravies",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS1804B",
+      "item_name": "Other condiments",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS18064",
+      "item_name": "Prepared salads",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS20021",
+      "item_name": "Whiskey at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS20022",
+      "item_name": "Distilled spirits, excluding whiskey, at home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS20051",
+      "item_name": "Beer, ale, and other malt beverages away from home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS20052",
+      "item_name": "Wine away from home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SS20053",
+      "item_name": "Distilled spirits away from home",
+      "source_file": "cu.data.11.USFoodBeverage"
+    },
+    {
+      "item_code": "SSFV031A",
+      "item_name": "Food at elementary and secondary schools",
+      "source_file": "cu.data.11.USFoodBeverage"
+    }
+  ],
+  "Other Goods and Services": [
+    {
+      "item_code": "SAG",
+      "item_name": "Other goods and services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SAG1",
+      "item_name": "Personal care",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SAGC",
+      "item_name": "Other goods",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SAGS",
+      "item_name": "Other personal services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGA",
+      "item_name": "Tobacco and smoking products",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGA01",
+      "item_name": "Cigarettes",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGA02",
+      "item_name": "Tobacco products other than cigarettes",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGB",
+      "item_name": "Personal care products",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGB01",
+      "item_name": "Hair, dental, shaving, and miscellaneous personal care product",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGB02",
+      "item_name": "Cosmetics, perfume, bath, nail preparations and implements",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGC",
+      "item_name": "Personal care services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGC01",
+      "item_name": "Haircuts and other personal care services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGD",
+      "item_name": "Miscellaneous personal services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGD01",
+      "item_name": "Legal services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGD02",
+      "item_name": "Funeral expenses",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGD03",
+      "item_name": "Laundry and dry cleaning services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGD04",
+      "item_name": "Apparel services other than laundry and dry cleaning",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGD05",
+      "item_name": "Financial services",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SEGE",
+      "item_name": "Miscellaneous personal goods",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SS33032",
+      "item_name": "Stationery, stationery supplies, gift wrap",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    },
+    {
+      "item_code": "SSGE013",
+      "item_name": "Infants' equipment",
+      "source_file": "cu.data.18.USOtherGoodsAndServices"
+    }
+  ],
+  "Housing": [
+    {
+      "item_code": "SAH",
+      "item_name": "All Housing",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SAH1",
+      "item_name": "Shelter",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SAH2",
+      "item_name": "Fuels and utilities",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SAH21",
+      "item_name": "Household energy",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SAH3",
+      "item_name": "Household furnishings and operations",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SAH31",
+      "item_name": "Household furnishings and supplies",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHA",
+      "item_name": "Rent of primary residence",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHB",
+      "item_name": "Lodging away from home",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHB01",
+      "item_name": "Housing at school, excluding board",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHB02",
+      "item_name": "Other lodging away from home including hotels and motels",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHC",
+      "item_name": "Owners' equivalent rent of residences",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHC01",
+      "item_name": "Owners' equivalent rent of primary residence",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHD",
+      "item_name": "Tenants' and household insurance",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHE",
+      "item_name": "Fuel oil and other fuels",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHE01",
+      "item_name": "Fuel oil",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHE02",
+      "item_name": "Propane, kerosene, and firewood",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHF",
+      "item_name": "Energy services",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHF01",
+      "item_name": "Electricity",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHF02",
+      "item_name": "Utility (piped) gas service",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHG",
+      "item_name": "Water and sewer and trash collection services",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHG01",
+      "item_name": "Water and sewerage maintenance",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHG02",
+      "item_name": "Garbage and trash collection",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHH",
+      "item_name": "Window and floor coverings and other linens",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHH01",
+      "item_name": "Floor coverings",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHH02",
+      "item_name": "Window coverings",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHH03",
+      "item_name": "Other linens",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHJ",
+      "item_name": "Furniture and bedding",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHJ01",
+      "item_name": "Bedroom furniture",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHJ02",
+      "item_name": "Living room, kitchen, and dining room furniture",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHJ03",
+      "item_name": "Other furniture",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHK",
+      "item_name": "Appliances",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHK01",
+      "item_name": "Major appliances",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHK02",
+      "item_name": "Other appliances",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHL",
+      "item_name": "Other household equipment and furnishings",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHL01",
+      "item_name": "Clocks, lamps, and decorator items",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHL02",
+      "item_name": "Indoor plants and flowers",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHL03",
+      "item_name": "Dishes and flatware",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHL04",
+      "item_name": "Nonelectric cookware and tableware",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHM",
+      "item_name": "Tools, hardware, outdoor equipment and supplies",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHM01",
+      "item_name": "Tools, hardware and supplies",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHM02",
+      "item_name": "Outdoor equipment and supplies",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHN",
+      "item_name": "Housekeeping supplies",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHN01",
+      "item_name": "Household cleaning products",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHN02",
+      "item_name": "Household paper products",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHN03",
+      "item_name": "Miscellaneous household products",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHP",
+      "item_name": "Household operations",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHP01",
+      "item_name": "Domestic services",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHP02",
+      "item_name": "Gardening and lawncare services",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHP03",
+      "item_name": "Moving, storage, freight expense",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SEHP04",
+      "item_name": "Repair of household items",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SS30021",
+      "item_name": "Laundry equipment",
+      "source_file": "cu.data.12.USHousing"
+    },
+    {
+      "item_code": "SSHJ031",
+      "item_name": "Infants' furniture",
+      "source_file": "cu.data.12.USHousing"
+    }
+  ],
+  "Medical": [
+    {
+      "item_code": "SAM",
+      "item_name": "Medical care",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SAM1",
+      "item_name": "Medical care commodities",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SAM2",
+      "item_name": "Medical care services",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMC",
+      "item_name": "Professional services",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMC01",
+      "item_name": "Physicians' services",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMC02",
+      "item_name": "Dental services",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMC03",
+      "item_name": "Eyeglasses and eye care",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMC04",
+      "item_name": "Services by other medical professionals",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMD",
+      "item_name": "Hospital and related services",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMD01",
+      "item_name": "Hospital services",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMD02",
+      "item_name": "Nursing homes and adult day services",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMD03",
+      "item_name": "Care of invalids and elderly at home",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEME",
+      "item_name": "Health insurance",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMF",
+      "item_name": "Medicinal drugs",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMF01",
+      "item_name": "Prescription drugs",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMF02",
+      "item_name": "Nonprescription drugs",
+      "source_file": "cu.data.15.USMedical"
+    },
+    {
+      "item_code": "SEMG",
+      "item_name": "Medical equipment and supplies",
+      "source_file": "cu.data.15.USMedical"
+    }
+  ],
+  "Recreation": [
+    {
+      "item_code": "SAR",
+      "item_name": "All Recreation",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SARC",
+      "item_name": "Recreation commodities",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SARS",
+      "item_name": "Recreation services",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERA",
+      "item_name": "Video and audio",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERA01",
+      "item_name": "Televisions",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERA02",
+      "item_name": "Cable and satellite television service",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERA03",
+      "item_name": "Other video equipment",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERA04",
+      "item_name": "Video discs and other media, including rental of video",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERA05",
+      "item_name": "Audio equipment",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERA06",
+      "item_name": "Recorded music and music subscriptions",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERAC",
+      "item_name": "Video and audio products",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERAS",
+      "item_name": "Video and audio services",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERB",
+      "item_name": "Pets, pet products and services",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERB01",
+      "item_name": "Pets and pet products",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERB02",
+      "item_name": "Pet services including veterinary",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERC",
+      "item_name": "Sporting goods",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERC01",
+      "item_name": "Sports vehicles including bicycles",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERC02",
+      "item_name": "Sports equipment",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERD",
+      "item_name": "Photography",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERD01",
+      "item_name": "Photographic equipment and supplies",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERD02",
+      "item_name": "Photographers and photo processing",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERE",
+      "item_name": "Other recreational goods",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERE01",
+      "item_name": "Toys",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERE02",
+      "item_name": "Sewing machines, fabric and supplies",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERE03",
+      "item_name": "Music instruments and accessories",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERF",
+      "item_name": "Other recreation services",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERF01",
+      "item_name": "Club membership for shopping clubs, fraternal, or other organi",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERF02",
+      "item_name": "Admissions",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERF03",
+      "item_name": "Fees for lessons or instructions",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERG",
+      "item_name": "Recreational reading materials",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERG01",
+      "item_name": "Newspapers and magazines",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SERG02",
+      "item_name": "Recreational books",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS31022",
+      "item_name": "Video discs and other media",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS31023",
+      "item_name": "Video game hardware, software and accessories",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS61011",
+      "item_name": "Toys, games, hobbies and playground equipment",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS61021",
+      "item_name": "Film and photographic supplies",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS61023",
+      "item_name": "Photographic equipment",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS61031",
+      "item_name": "Pet food",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS61032",
+      "item_name": "Purchase of pets, pet supplies, accessories",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62011",
+      "item_name": "Automobile service clubs",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62031",
+      "item_name": "Admission to movies, theaters, and concerts",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62032",
+      "item_name": "Admission to sporting events",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62051",
+      "item_name": "Photographer fees",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62052",
+      "item_name": "Photo Processing",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62053",
+      "item_name": "Pet services",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62054",
+      "item_name": "Veterinarian services",
+      "source_file": "cu.data.16.USRecreation"
+    },
+    {
+      "item_code": "SS62055",
+      "item_name": "Rental of video discs and other media",
+      "source_file": "cu.data.16.USRecreation"
+    }
+  ],
+  "Transportation": [
+    {
+      "item_code": "SAT",
+      "item_name": "All Transportation",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SAT1",
+      "item_name": "Private transportation",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SATCLTB",
+      "item_name": "Transportation commodities less motor fuel",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETA",
+      "item_name": "New and used motor vehicles",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETA01",
+      "item_name": "New vehicles",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETA02",
+      "item_name": "Used cars and trucks",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETA03",
+      "item_name": "Leased cars and trucks",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETA04",
+      "item_name": "Car and truck rental",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETB",
+      "item_name": "Motor fuel",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETB01",
+      "item_name": "Gasoline (all types)",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETB02",
+      "item_name": "Other motor fuels",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETC",
+      "item_name": "Motor vehicle parts and equipment",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETC01",
+      "item_name": "Tires",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETC02",
+      "item_name": "Vehicle accessories other than tires",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETD",
+      "item_name": "Motor vehicle maintenance and repair",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETD01",
+      "item_name": "Motor vehicle body work",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETD02",
+      "item_name": "Motor vehicle maintenance and servicing",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETD03",
+      "item_name": "Motor vehicle repair",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETE",
+      "item_name": "Motor vehicle insurance",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETF",
+      "item_name": "Motor vehicle fees",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETF01",
+      "item_name": "State motor vehicle registration and license fees",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETF03",
+      "item_name": "Parking and other fees",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETG",
+      "item_name": "Public transportation",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETG01",
+      "item_name": "Airline fares",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETG02",
+      "item_name": "Other intercity transportation",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SETG03",
+      "item_name": "Intracity transportation",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS45011",
+      "item_name": "New cars",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS4501A",
+      "item_name": "New cars and trucks",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS45021",
+      "item_name": "New trucks",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS45031",
+      "item_name": "New motorcycles",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS47014",
+      "item_name": "Gasoline, unleaded regular",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS47015",
+      "item_name": "Gasoline, unleaded midgrade",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS47016",
+      "item_name": "Gasoline, unleaded premium",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS47021",
+      "item_name": "Motor oil, coolant, and fluids",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS48021",
+      "item_name": "Vehicle parts and equipment other than tires",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS52051",
+      "item_name": "Parking fees and tolls",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS53021",
+      "item_name": "Intercity bus fare",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS53022",
+      "item_name": "Intercity train fare",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS53023",
+      "item_name": "Ship fare",
+      "source_file": "cu.data.14.USTransportation"
+    },
+    {
+      "item_code": "SS53031",
+      "item_name": "Intracity mass transit",
+      "source_file": "cu.data.14.USTransportation"
+    }
+  ]
+}

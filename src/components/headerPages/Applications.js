@@ -1,4 +1,4 @@
-import Form from "../applications/form";
+import Form from "../applications/flaskSASCpiViewer/form";
 
 const Applications = () => {
     return (
