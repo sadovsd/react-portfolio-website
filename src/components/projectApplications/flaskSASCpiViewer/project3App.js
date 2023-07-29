@@ -134,7 +134,7 @@ function Project3App() {
             setCalcType(null);
             setForm({ ...form, calcType: '' });
         }
-    }, [selectedStartYear, selectedEndYear, selectedCalcType, setCalcType, setForm]);
+    }, [selectedStartYear, selectedEndYear, selectedCalcType, setCalcType]);
     
 
 
