@@ -11240,6 +11240,7 @@ __metadata:
     plotly.js: ^2.24.3
     postcss: ^8.4.25
     react: ^18.2.0
+    react-checkmark: ^1.4.0
     react-dom: ^18.2.0
     react-onclickoutside: ^6.13.0
     react-player: ^2.12.0
@@ -12472,6 +12473,16 @@ __metadata:
     regenerator-runtime: ^0.13.9
     whatwg-fetch: ^3.6.2
   checksum: 1bb031080af15397d6eb9c69a0c2e93799991f7197a086e4409ba719398f1256b542a3d6c9a34673d516c684eef3e8226c99b335982593851f58f65f6e43571b
+  languageName: node
+  linkType: hard
+
+"react-checkmark@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "react-checkmark@npm:1.4.0"
+  peerDependencies:
+    prop-types: ^15.7.2
+    react: ^16.8.6
+  checksum: 59a7237d27aae165395f1d78193eeac1f0ca4195d51c20ee1175f2343049dc811fcd1c0c938c53dfc70d40888aa07538fef56a72cd44b35e31b2227dfc89d56e
   languageName: node
   linkType: hard
 

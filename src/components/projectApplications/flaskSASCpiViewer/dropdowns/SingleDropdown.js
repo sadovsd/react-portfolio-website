@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown } from '../../../icons';
+import { ChevronDown } from '../../../../icons';
 
 
 function SingleDropdown({ options, onSelect, placeholder, label, className, value }) {
@@ -53,7 +53,7 @@ function SingleDropdown({ options, onSelect, placeholder, label, className, valu
           <div className="dropdown__container">
             {options.map(option => (
               <div className="dropdown__option" onClick={() => handleOptionClicked(option)} key={option.name}>
-                <span className="dropdown__sub-option">{option.name}</span>
+                <span className="dropdown__option-name">{option.name}</span>
               </div>
             ))}
           </div>

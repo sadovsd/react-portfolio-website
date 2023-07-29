@@ -1,9 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const Header = ( {children} ) => {
     
-    const [activeLink, setActiveLink] = useState('');
+    const location = useLocation();
+    const [activeLink, setActiveLink] = useState(location.pathname);
+
+    useEffect(() => {
+        // Set active link to current pathname when the component mounts
+        setActiveLink(location.pathname);
+    }, [location.pathname]);
 
     const style = {
         display: 'inline-block',
@@ -20,11 +26,6 @@ const Header = ( {children} ) => {
         setActiveLink(link);
         console.log('active link is..', link)
     };
-
-    useEffect(() => {
-        // Set active link to '/' when the component mounts
-        setActiveLink('/');
-    }, []);
     
 
     return(
@@ -42,7 +43,7 @@ const Header = ( {children} ) => {
                 {/* <h2 style={style}>
                     <Link 
                     to='/jokes' 
-                    className={`header-link ${activeLink === '/jokes' ? 'active' : ''}`} 
+                    className={`header-link ${activeLink.startsWith('/jokes') ? 'active' : ''}`} 
                     style={linkStyle} 
                     onClick={() => handleLinkClick('/jokes')}>
                         Jokes
@@ -51,7 +52,7 @@ const Header = ( {children} ) => {
                 <h2 style={style}>
                     <Link 
                     to='/resume' 
-                    className={`header-link ${activeLink === '/resume' ? 'active' : ''}`} 
+                    className={`header-link ${activeLink.startsWith('/resume') ? 'active' : ''}`} 
                     style={linkStyle} 
                     onClick={() => handleLinkClick('/resume')}>
                         Resume
@@ -60,7 +61,7 @@ const Header = ( {children} ) => {
                 <h2 style={style}>
                     <Link 
                     to='/projects' 
-                    className={`header-link ${activeLink === '/projects' ? 'active' : ''}`} 
+                    className={`header-link ${activeLink.startsWith('/projects') ? 'active' : ''}`} 
                     style={linkStyle} 
                     onClick={() => handleLinkClick('/projects')}>
                         Projects
@@ -69,7 +70,7 @@ const Header = ( {children} ) => {
                 <h2 style={style}>
                     <Link 
                     to='/applications' 
-                    className={`header-link ${activeLink === '/applications' ? 'active' : ''}`} 
+                    className={`header-link ${activeLink.startsWith('/applications') ? 'active' : ''}`} 
                     style={linkStyle} 
                     onClick={() => handleLinkClick('/applications')}>
                         Applications

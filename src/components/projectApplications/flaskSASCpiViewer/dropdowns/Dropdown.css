@@ -11,11 +11,10 @@
   position: absolute;
   bottom: 10px; /* Adjust as necessary */
   left: 0px; /* Adjust as necessary */
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   opacity: 0;
   background-color: white;
   padding: 2px 4px; /* Adjust as necessary */
-  /* z-index: 1; To ensure the label appears above other elements */
 }
 
 .input:not(:placeholder-shown) + .label,
@@ -38,6 +37,16 @@
     position: relative;
     text-align: left;
   }
+  .dropdown__container_nested {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: absolute; 
+    width: 100%; 
+    background-color: white;
+  }
+
   .dropdown__container {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -45,7 +54,19 @@
     z-index: 1;
     position: absolute; 
     width: 100%; 
-    background-color: white; 
+    background-color: white;
+    max-height: 225px;
+    overflow-y: auto; /* Step 2 */
+    scrollbar-width: thin; /* Step 3 for Firefox */
+  }
+  
+  .dropdown__container::-webkit-scrollbar { /* Step 3 for Webkit browsers */
+    width: 6px;
+  }
+  
+  .dropdown__container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
   }
 
   .dropdown__option {
@@ -133,7 +154,7 @@
 
   .dropdown__input--focused {
     padding: 9px;
-    border: 2px solid #2684ff; 
+    border: 1.5px solid #2684ff; 
   }
 
   .dropdown__arrow {

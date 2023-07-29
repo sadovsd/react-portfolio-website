@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import onClickOutside from 'react-onclickoutside';
 import './Dropdown.css';
-import { ChevronDown, ChevronRight } from '../../../icons';
+import { ChevronDown, ChevronRight } from '../../../../icons';
 
 function Dropdown({ options, onSelect, label, defaultSelectedOption}) {
   const [activeOption, setActiveOption] = useState(null);
@@ -46,7 +46,7 @@ function Dropdown({ options, onSelect, label, defaultSelectedOption}) {
           <ChevronDown className={`dropdown__arrow ${isOptionSelected ? '' : 'dropdown__arrow--bold'}`} />
         </div>
         {isOpen && (
-          <div className="dropdown__container">
+          <div className="dropdown__container_nested">
             {options.map((option, index) => (
               <div 
                 key={option.name}

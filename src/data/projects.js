@@ -15,7 +15,8 @@ const PROJECTS = [
         tags: 'Regression/ Bootstrap',
         technologies: ['R'],
         image: project1,
-        hasApp: false
+        hasApp: false,
+        appPath: ''
     },
     {
         id: 2,
@@ -25,7 +26,8 @@ const PROJECTS = [
         tags: 'Frontend',
         technologies: ['React', 'Tailwind CSS', 'REST API'],
         image: stoman,
-        hasApp: false
+        hasApp: false,
+        appPath: ''
     },
     {
         id: 3,
@@ -35,7 +37,8 @@ const PROJECTS = [
         tags: 'Data Manipulation/ Backend',
         technologies: ['SAS', 'SQL', 'Flask', 'Azure', 'Python', 'SAS Viya'],
         image: project2,
-        hasApp: true
+        hasApp: true,
+        appPath: '/applications/flaskSASCpiViewer'
     },
     {
         id: 4,
@@ -45,7 +48,8 @@ const PROJECTS = [
         tags: 'Clustering/ Visualization',
         technologies: ['Python', 'Flask'],
         image: project3,
-        hasApp: true
+        hasApp: true,
+        appPath: '/applications/healthAlgorithmsApp'
     }
     // {
     //     id: 4,

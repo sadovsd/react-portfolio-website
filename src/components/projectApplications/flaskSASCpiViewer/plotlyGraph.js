@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-function PlotlyGraph({ csvData }) {
+function PlotlyGraph({ className, csvData, title  }) {
     const csvRows = csvData.split('\n');
     const xData = [];
     const yData = [];
@@ -9,7 +9,7 @@ function PlotlyGraph({ csvData }) {
     // Parse the CSV data and extract x and y values
     for (const row of csvRows.slice(1, -1)) {
         const [x, y] = row.split(',');
-        xData.push(parseFloat(x));
+        xData.push(x);
         yData.push(parseFloat(y));
     }
 
@@ -19,16 +19,22 @@ function PlotlyGraph({ csvData }) {
         y: yData,
         type: 'scatter',
         mode: 'lines+markers',
-        name: 'x vs. y',
+        name: 'Value over Time',
     };
 
     // Set the Plotly data
     const data = [trace];
-
+    
+    const layout = {
+        title: `${title}`,
+        xaxis: {
+            //tickangle: -55, // set the x-axis labels to be angled
+            nticks: 12,     // set a maximum of 12 ticks on the x-axis
+        },
+    };
     return (
-        <div>
-            <h2>x vs. y Plot</h2>
-            <Plot data={data} layout={{ title: 'x vs. y' }} />
+        <div className={className}>
+            <Plot data={data} layout={layout} />
         </div>
     );
 }

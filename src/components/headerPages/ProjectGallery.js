@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 // This is an example of a component built using stateless functional components, contrasting to the Resume component
 const Project = props => {
 
-    const { id, title, date, tags, image, description, technologies, hasApp } = props.project;
+    const { id, title, date, tags, image, description, technologies, hasApp, appPath } = props.project;
     return (
         <div className=' relative flex flex-col items-center rounded-2xl w-[37rem] overflow-hidden shadow-md transition-all duration-100 transform-gpu hover:-translate-y-2 hover:shadow-lg'>
             <img className='h-[22rem] mt-4' src={image} alt='project'></img>
@@ -68,10 +68,12 @@ const Project = props => {
             <Link to={`/projects/project${id}`} className={`absolute bottom-8 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg ${hasApp ? 'left-[95px]' : ''}`}>
                 See More
             </Link>
-            {hasApp ? 
-            <button className="absolute bottom-8 right-[95px] bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg border border-gray-200">
-                Use App
-            </button> : ''}
+            {hasApp ?
+            <Link to={appPath}>
+                <button className="absolute bottom-8 right-[95px] bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg border border-gray-200">
+                    Use App
+                </button>
+            </Link> : ''}
         </div>
     )
 }
