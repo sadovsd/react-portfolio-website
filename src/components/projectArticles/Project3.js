@@ -1,7 +1,4 @@
 import React from 'react';
-import Project3App from '../projectApplications/flaskSASCpiViewer/project3App';
-
-
 
 const Project3 = () => {
     return(
