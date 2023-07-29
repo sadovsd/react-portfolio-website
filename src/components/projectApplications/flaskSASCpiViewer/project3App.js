@@ -37,8 +37,6 @@ function Project3App() {
     const [selectedEndYear, setSelectedEndYear] = useState(null);
     useEffect(() => {
         const [startYear, endYear] = seriesInfo ? seriesInfo.split(", ").map(Number) : [null, null];
-        console.log('startYear', startYear);
-        console.log('endYear', endYear);
         if (startYear && endYear) {
             const years = Array.from({length: endYear - startYear + 1}, (_, i) => startYear + i);
             setYearOptions(years.map(year => ({ name: year.toString(), subOptions: [] })));
@@ -60,6 +58,11 @@ function Project3App() {
     // since item name is not set in the form, but we still need it for the plotly graph, i'll keep track of it in a state var
     const [itemName, setItemName] = useState([]);
     // tranform the expense type data from .json file into a format suitable for using in my nested dropdown component
+    // ...... The dependency array is an optional second argument you can pass to useEffect to control when it runs. When any
+    // value in the dependency array changes, the effect function will run again. If you pass an empty array ([]), the useEffect
+    // will only run once after the initial render, similar to componentDidMount. If you omit the array entirely, the effect
+    // will run after every render. If you include variables in the array, the effect will run anytime any of those variables
+    // change.
     useEffect(() => {
         setOptions(transformOptions(itemNamesData));
       }, []);
@@ -111,7 +114,7 @@ function Project3App() {
                 { name: 'Yearly', subOptions: [] },
             ]);
         }
-    }, [selectedStartYear, selectedEndYear]);
+    }, [selectedStartYear, selectedEndYear, setCalcTypeOptions]);
     // for the data that will go into calc type dropdown
     const [selectedCalcType, setCalcType] = useState(null);
     // update form with a calcType when user selects one from the dropdown
@@ -131,7 +134,7 @@ function Project3App() {
             setCalcType(null);
             setForm({ ...form, calcType: '' });
         }
-    }, [selectedStartYear, selectedEndYear, selectedCalcType]);
+    }, [selectedStartYear, selectedEndYear, selectedCalcType, setCalcType, setForm]);
     
 
 
