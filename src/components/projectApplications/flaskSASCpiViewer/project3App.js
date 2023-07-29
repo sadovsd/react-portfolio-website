@@ -114,7 +114,7 @@ function Project3App() {
                 { name: 'Yearly', subOptions: [] },
             ]);
         }
-    }, [selectedStartYear, selectedEndYear, setCalcTypeOptions]);
+    }, [selectedStartYear, selectedEndYear]);
     // for the data that will go into calc type dropdown
     const [selectedCalcType, setCalcType] = useState(null);
     // update form with a calcType when user selects one from the dropdown
@@ -134,7 +134,7 @@ function Project3App() {
             setCalcType(null);
             setForm({ ...form, calcType: '' });
         }
-    }, [selectedStartYear, selectedEndYear, selectedCalcType, setCalcType]);
+    }, [selectedStartYear, selectedEndYear, selectedCalcType, form]);
     
 
 
