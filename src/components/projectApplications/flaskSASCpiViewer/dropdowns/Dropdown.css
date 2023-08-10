@@ -10,7 +10,7 @@
 .label {
   position: absolute;
   bottom: 10px; /* Adjust as necessary */
-  left: 0px; /* Adjust as necessary */
+  left: 8px; /* Adjust as necessary */
   transition: all 0.3s ease;
   opacity: 0;
   background-color: white;
@@ -33,7 +33,7 @@
 
 
 .dropdown {
-    width: 250px;
+    /* width: 200px; */
     position: relative;
     text-align: left;
   }
@@ -55,7 +55,7 @@
     position: absolute; 
     width: 100%; 
     background-color: white;
-    max-height: 225px;
+    max-height: 275px;
     overflow-y: auto; /* Step 2 */
     scrollbar-width: thin; /* Step 3 for Firefox */
   }

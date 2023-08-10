@@ -1,7 +1,9 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-function PlotlyGraph({ className, csvData, title  }) {
+function PlotlyGraph({ className, jsonData, keyProp, title }) {
+    const dataDict = JSON.parse(jsonData); // Parse JSON string into an object
+    const csvData = dataDict[keyProp];
     const csvRows = csvData.split('\n');
     const xData = [];
     const yData = [];
@@ -19,24 +21,62 @@ function PlotlyGraph({ className, csvData, title  }) {
         y: yData,
         type: 'scatter',
         mode: 'lines+markers',
-        name: 'Value over Time',
+        name: `Value over Time - ${keyProp}`,
     };
 
     // Set the Plotly data
     const data = [trace];
-    
+
+    let xAxisLabel = 'Year'; // default x-axis label
+    if (title.includes('Month')) xAxisLabel = 'Month';
+    else if (title.includes('Quarter')) xAxisLabel = 'Quarter';
+
+    // if the title is too long, insert a line break
+    let titleArray = title.split(' ');
+    if (titleArray.length > 6) {
+        titleArray.splice(5, 0, '<br>');
+        title = titleArray.join(' ');
+    }
+
     const layout = {
-        title: `${title}`,
+        title: title,
         xaxis: {
-            //tickangle: -55, // set the x-axis labels to be angled
+            title: {
+                text: xAxisLabel,
+            },
             nticks: 12,     // set a maximum of 12 ticks on the x-axis
         },
+        yaxis: {
+            title: {
+                text: 'CPI'
+            }
+        }
     };
+
+    // Configuration for the mode bar
+    const config = {
+        displayModeBar: true,
+        modeBarButtonsToRemove: [
+            'select2d', 
+            'lasso2d', 
+            'zoomIn2d', 
+            'autoScale2d', 
+            'hoverClosestCartesian', 
+            'hoverCompareCartesian', 
+            'toggleSpikelines'
+        ],
+    };
+
     return (
         <div className={className}>
-            <Plot data={data} layout={layout} />
+            <Plot 
+                data={data} 
+                layout={layout} 
+                config={config}
+            />
         </div>
     );
+    
 }
 
 export default PlotlyGraph;

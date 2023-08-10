@@ -3,7 +3,7 @@ import onClickOutside from 'react-onclickoutside';
 import './Dropdown.css';
 import { ChevronDown, ChevronRight } from '../../../../icons';
 
-function Dropdown({ options, onSelect, label, defaultSelectedOption}) {
+function Dropdown({ options, onSelect, label, defaultSelectedOption, className}) {
   const [activeOption, setActiveOption] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(defaultSelectedOption);
@@ -34,47 +34,49 @@ function Dropdown({ options, onSelect, label, defaultSelectedOption}) {
   };
 
   return (
-    <div className="input-group">
-      <div className="dropdown">
-        <div
-          id='inputField'
-          className={`dropdown__input ${isOpen || isFocused ? 'dropdown__input--focused' : ''}`}
-          onClick={handleDropDownClick}
-          tabIndex="0"
-        >
-          {selectedOption ? selectedOption : <span className="dropdown__placeholder">Expense Type</span>}
-          <ChevronDown className={`dropdown__arrow ${isOptionSelected ? '' : 'dropdown__arrow--bold'}`} />
-        </div>
-        {isOpen && (
-          <div className="dropdown__container_nested">
-            {options.map((option, index) => (
-              <div 
-                key={option.name}
-                onClick={() => handleOptionClick(option)}
-                className={`dropdown__option ${activeOption === option ? 'dropdown__option--active' : ''}`}
-                style={index === 0 ? {marginTop: '0px'} : null}
-              >
-                {option.name}
-                <ChevronRight className="dropdown__chevron-right" />
-                {activeOption === option && (
-                  <div className="dropdown__sub-options">
-                    {option.subOptions.map(subOption => (
-                      <div 
-                        key={subOption.name} 
-                        className={`dropdown__sub-option ${selectedOption === subOption.name ? 'dropdown__sub-option--active' : ''}`}
-                        onClick={(e) => {e.stopPropagation(); handleSubOptionClick(subOption);}}
-                      >
-                        {subOption.name}
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+    <div className={className}>
+      <div className="input-group">
+        <div className="dropdown w-[250px]">
+          <div
+            id='inputField'
+            className={`dropdown__input ${isOpen || isFocused ? 'dropdown__input--focused' : ''}`}
+            onClick={handleDropDownClick}
+            tabIndex="0"
+          >
+            {selectedOption ? selectedOption : <span className="dropdown__placeholder">Expense Type</span>}
+            <ChevronDown className={`dropdown__arrow ${isOptionSelected ? '' : 'dropdown__arrow--bold'}`} />
           </div>
-        )}
+          {isOpen && (
+            <div className="dropdown__container_nested">
+              {options.map((option, index) => (
+                <div 
+                  key={option.name}
+                  onClick={() => handleOptionClick(option)}
+                  className={`dropdown__option ${activeOption === option ? 'dropdown__option--active' : ''}`}
+                  style={index === 0 ? {marginTop: '0px'} : null}
+                >
+                  {option.name}
+                  <ChevronRight className="dropdown__chevron-right" />
+                  {activeOption === option && (
+                    <div className="dropdown__sub-options">
+                      {option.subOptions.map(subOption => (
+                        <div 
+                          key={subOption.name} 
+                          className={`dropdown__sub-option ${selectedOption === subOption.name ? 'dropdown__sub-option--active' : ''}`}
+                          onClick={(e) => {e.stopPropagation(); handleSubOptionClick(subOption);}}
+                        >
+                          {subOption.name}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+        <label htmlFor="inputField" className={`label ${selectedOption ? 'label--float' : ''}`}>{label}</label>
       </div>
-      <label htmlFor="inputField" className={`label ${selectedOption ? 'label--float' : ''}`}>{label}</label>
     </div>
   );
 }
