@@ -38,9 +38,9 @@ class Home extends Component {
                             {/* tracking-[10px]  */}
                             <h1 className='mb-12 text-[60px] tracking-[.5rem]'>DAVYD SADOVSKYY</h1>
                             <div className='mt-40'>
-                                <IntroAnimate onIntroAnimationComplete={this.handleIntroAnimationComplete} />
+                                {/* <IntroAnimate onIntroAnimationComplete={this.handleIntroAnimationComplete} />
                                 {introAnimationComplete && showTitles && <TitlesAnimate onTitleAnimationComplete={this.handleTitleAnimationComplete} />}
-                                {titleAnimationComplete && showTitleSlow && <TitlesSlowAnimate />}
+                                {titleAnimationComplete && showTitleSlow && <TitlesSlowAnimate />} */}
                             </div>
                         </div>
                     </motion.div>
@@ -52,7 +52,7 @@ class Home extends Component {
                     </motion.div>
                 </div>
                 <div className='flex flex-col md:flex-row mt-40 mb-32 border-soli'>
-                    <img src={headshot} alt='headshot' className='h-[400px] p-16' />
+                    {/* <img src={headshot} alt='headshot' className='h-[400px] p-16' /> */}
                     <p className='text-[25px] p-12'>
                     </p>
                 </div>
