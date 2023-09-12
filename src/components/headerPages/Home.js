@@ -1,32 +1,32 @@
 import React, { Component } from 'react';
 import stoman from '../../assets/stoman.png';
-import headshot from '../../assets/headshot.png';
-import IntroAnimate from '../animations/IntroAnimate';
-import TitlesAnimate from '../animations/TitlesAnimate';
-import TitlesSlowAnimate from '../animations/TitlesSlowAnimate';
+// import headshot from '../../assets/headshot.png';
+// import IntroAnimate from '../animations/IntroAnimate';
+// import TitlesAnimate from '../animations/TitlesAnimate';
+// import TitlesSlowAnimate from '../animations/TitlesSlowAnimate';
 import { motion } from 'framer-motion';
 
 
 class Home extends Component {
 
-    state = { introAnimationComplete: false, titleAnimationComplete: false, showTitles: false, showTitleSlow: false};
+    // state = { introAnimationComplete: false, titleAnimationComplete: false, showTitles: false, showTitleSlow: false};
 
-    handleIntroAnimationComplete = () => {
-        this.setState({ introAnimationComplete: true });
-        setTimeout(() => {
-            this.setState({ showTitles: true });
-          }, 50);
-    };
+    // handleIntroAnimationComplete = () => {
+    //     this.setState({ introAnimationComplete: true });
+    //     setTimeout(() => {
+    //         this.setState({ showTitles: true });
+    //       }, 50);
+    // };
 
-    handleTitleAnimationComplete = () => {
-        this.setState({ titleAnimationComplete: true });
-        setTimeout(() => {
-            this.setState({ showTitleSlow: true });
-          }, 500);
-    };
+    // handleTitleAnimationComplete = () => {
+    //     this.setState({ titleAnimationComplete: true });
+    //     setTimeout(() => {
+    //         this.setState({ showTitleSlow: true });
+    //       }, 500);
+    // };
 
     render() {
-        const { introAnimationComplete, titleAnimationComplete, showTitles, showTitleSlow } = this.state;
+        // const { introAnimationComplete, titleAnimationComplete, showTitles, showTitleSlow } = this.state;
         return (
             <div className='container'>
                 <div className='flex flex-col md:flex-row m-auto md:m-28 md:ml-8'>
