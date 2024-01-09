@@ -92,7 +92,7 @@ const Header = ({ children }) => {
             </Link>
             <span className="text-[25px] font-medium ml-[4px] opacity-30">/</span>
             <Link to="/" className="whitespace-nowrap font-semibold text-[24px] inline ml-[4px] cursor-pointer" onClick={() => handleLinkClick('/')}>
-              Blog
+              Portfolio
             </Link>
           </div>
         </div>
