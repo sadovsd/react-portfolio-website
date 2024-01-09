@@ -104,7 +104,7 @@ function Project3App() {
             return;
         }
         setIsLoading1(true);
-        const url = new URL('https://flask-test2.azurewebsites.net/getAvailableSeries'); // azure deployed web app
+        const url = new URL('https://sas-flask-cpi-viewer.ashyisland-99d2d5a8.eastus.azurecontainerapps.io/getAvailableSeries'); // azure deployed web app
         // const url = new URL('http://localhost:8000/getAvailableSeries'); // docker container
         // const url = new URL('http://127.0.0.1:5000/getAvailableSeries'); // local
         url.searchParams.append('1', form.itemCode);
@@ -152,7 +152,7 @@ function Project3App() {
             return;
         }
         setIsLoading(true);
-        const url = new URL('https://flask-test2.azurewebsites.net/makeGraphReadyData'); // deployed jawn
+        const url = new URL('https://sas-flask-cpi-viewer.ashyisland-99d2d5a8.eastus.azurecontainerapps.io/makeGraphReadyData'); // deployed jawn
         // const url = new URL('http://localhost:8000/makeGraphReadyData'); // docker container
         // const url = new URL('http://127.0.0.1:5000/makeGraphReadyData'); // local jawn
         url.searchParams.append('1', form.startYear);

@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-checkmark": "^1.4.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-onclickoutside": "^6.13.0",
     "react-player": "^2.12.0",
     "react-plotly.js": "^2.6.0",

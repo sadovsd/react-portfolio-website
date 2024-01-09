@@ -9,7 +9,7 @@ const Applications = () => {
             <h3 className="text-slate-500 mt-8">Data Science Apps</h3>
 
             
-            <div className="grid grid-flow-row gap-10 text-left justify-center mt-32 w-[80rem]">
+            <div className="grid grid-flow-row gap-10 text-left justify-center mt-32 max-w-[80rem]">
                 <Link to='/applications/flaskSASCpiViewer'>
                     <div className="">
                         <h2 className="text-blue-500">Flask SAS CPI Viewer</h2>

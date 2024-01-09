@@ -115,11 +115,12 @@ function SingleDropdown({ options, onSelect, placeholder, label, className, valu
   }
 
   return (
-    <div className={`input-group ${className}`}>
+    <div className={`input-group w-full ${className}`}>
       <div className="dropdown" ref={node}>
         <div className={`dropdown__input ${isFocused ? 'dropdown__input--focused' : ''}`} onClick={e => {setIsOpen(!isOpen); setIsFocused(true)}}>
           <div className={`dropdown__placeholder ${value ? 'dropdown__option--selected' : ''}`}>{value || placeholder}</div>
           <ChevronDown className="dropdown__arrow" />
+          <label htmlFor="inputField" onClick={e => {setIsOpen(!isOpen); setIsFocused(true)}}  className={`cursor-pointer label ${value ? 'label--float' : ''}`}>{label}</label>
         </div>
         {isOpen && options && (
           <div className="dropdown__container">
@@ -131,7 +132,6 @@ function SingleDropdown({ options, onSelect, placeholder, label, className, valu
           </div>
         )}
       </div>
-      <label htmlFor="inputField" className={`label ${value ? 'label--float' : ''}`}>{label}</label>
     </div>
   );
 }

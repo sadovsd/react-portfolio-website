@@ -30,8 +30,6 @@
   color:#3a3c3e;
 }
 
-
-
 .dropdown {
     /* width: 200px; */
     position: relative;
@@ -178,10 +176,10 @@
   .dropdown__placeholder {
     color: #888;
     opacity: 1;
-    transition: opacity 0.2s ease;
+    /* transition: opacity 0.2s ease; */
   }
   
-  .dropdown__input:hover .dropdown__placeholder,
+  /* .dropdown__input:hover .dropdown__placeholder, */
   .dropdown__input:focus .dropdown__placeholder {
     opacity: 0.5;
   }

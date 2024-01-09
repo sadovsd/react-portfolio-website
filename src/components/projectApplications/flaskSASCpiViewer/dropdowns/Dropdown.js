@@ -35,16 +35,17 @@ function Dropdown({ options, onSelect, label, defaultSelectedOption, className})
 
   return (
     <div className={className}>
-      <div className="input-group">
-        <div className="dropdown w-[250px]">
+      <div className="input-group w-full">
+        <div className="dropdown w-[250px] border-[#add8e6] rounded-md">
           <div
             id='inputField'
-            className={`dropdown__input ${isOpen || isFocused ? 'dropdown__input--focused' : ''}`}
+            className={`cursor-pointer dropdown__input ${isOpen || isFocused ? 'dropdown__input--focused' : ''}`}
             onClick={handleDropDownClick}
             tabIndex="0"
           >
             {selectedOption ? selectedOption : <span className="dropdown__placeholder">Expense Type</span>}
-            <ChevronDown className={`dropdown__arrow ${isOptionSelected ? '' : 'dropdown__arrow--bold'}`} />
+            <ChevronDown className={`dropdown__arrow`} />
+            <label htmlFor="inputField" onClick={handleDropDownClick} className={`cursor-pointer label ${selectedOption ? 'label--float' : ''}`}>{label}</label>
           </div>
           {isOpen && (
             <div className="dropdown__container_nested">
@@ -75,7 +76,6 @@ function Dropdown({ options, onSelect, label, defaultSelectedOption, className})
             </div>
           )}
         </div>
-        <label htmlFor="inputField" className={`label ${selectedOption ? 'label--float' : ''}`}>{label}</label>
       </div>
     </div>
   );

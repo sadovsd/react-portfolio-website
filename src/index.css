@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+a, a:focus, a:hover {
+  text-decoration: none;
+}
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -118,4 +121,6 @@ h3 {
   to {opacity: 100}
 }
 
-
+a:focus, a:hover{
+  color: inherit !important;
+}

@@ -26,9 +26,32 @@ module.exports = {
       disc: 'disc',
       decimal: 'decimal',
       square: 'square',
-      roman: 'upper-roman',
+      roman: 'upper-roman'
+    },
+    screens: {
+      xs: {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
+      ssm: '320px',
+      // => @media (min-width: 320px) { ... }
+      msm: '375px',
+      // => @media (min-width: 375px) { ... }
+      lsm: '425px',
+      // => @media (min-width: 425px) { ... }
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1440px'
+      // => @media (min-width: 1440px) { ... }
     }
   },
-  plugins: [],
-}
-
+  plugins: []
+};
