@@ -10,7 +10,7 @@ const Collapsable = ({ titles, subtitle, dataArray }) => {
   const [showCourse, setShowCourse] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
-  const [descriptionTop, setDescriptionTop] = useState(0);
+  const [setDescriptionTop] = useState(0);
   const svgRef = useRef();
 
   const handleOnCourseClick = (index, evt) => {

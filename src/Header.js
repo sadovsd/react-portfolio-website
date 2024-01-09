@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { AiOutlineMenuFold } from "react-icons/ai";
+// import { AiOutlineMenuFold } from "react-icons/ai";
 import { useState, useEffect } from "react";
 
 const Header = ({ children }) => {
@@ -88,7 +88,7 @@ const Header = ({ children }) => {
         <div  className="flex gap-3 items-center mr-auto pl-[20px]">
           <div className="flex items-center">
             <Link to="/" className="font-semibold whitespace-nowrap hover:opacity-70" onClick={() => handleLinkClick('/')}>
-              <img className="w-[30px] h-[30px] rounded-full" src="/logo512.png"/>
+              <img className="w-[30px] h-[30px] rounded-full" src="/logo512.png" alt="dS logo"/>
             </Link>
             <span className="text-[25px] font-medium ml-[4px] opacity-30">/</span>
             <Link to="/" className="whitespace-nowrap font-semibold text-[24px] inline ml-[4px] cursor-pointer" onClick={() => handleLinkClick('/')}>

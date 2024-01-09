@@ -5,9 +5,9 @@ import stoman from '../../assets/stoman.png';
 // import TitlesAnimate from '../animations/TitlesAnimate';
 // import TitlesSlowAnimate from '../animations/TitlesSlowAnimate';
 import { motion } from 'framer-motion';
-import HighlightedProjects from './HighlightedProjects';
+// import HighlightedProjects from './HighlightedProjects';
 // import { HIGHLIGHTED_PROJECTS } from './Projects';
-import PROJECTS from '../../data/projects';
+// import PROJECTS from '../../data/projects';
 import { AiFillLayout } from 'react-icons/ai';
 import {
   EmailIcon,

@@ -8,7 +8,7 @@ function Dropdown({ options, onSelect, label, defaultSelectedOption, className})
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(defaultSelectedOption);
   const [isFocused, setIsFocused] = useState(false);
-  const [isOptionSelected, setIsOptionSelected] = useState(false);
+  const [setIsOptionSelected] = useState(false);
 
   Dropdown.handleClickOutside = () => {
     setIsOpen(false);
