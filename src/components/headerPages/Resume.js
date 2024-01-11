@@ -10,16 +10,16 @@ const Collapsable = ({ titles, subtitle, dataArray }) => {
   const [showCourse, setShowCourse] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
-  const [setDescriptionTop] = useState(0);
+  // const [descriptionTop, setDescriptionTop] = useState(0);
   const svgRef = useRef();
 
   const handleOnCourseClick = (index, evt) => {
-    const outermostDiv = evt.currentTarget.closest('.relative');
-    const outermostRect = outermostDiv.getBoundingClientRect();
-    const spanRect = evt.currentTarget.getBoundingClientRect();
-    const top = spanRect.top - outermostRect.top;
+    // const outermostDiv = evt.currentTarget.closest('.relative');
+    // const outermostRect = outermostDiv.getBoundingClientRect();
+    // const spanRect = evt.currentTarget.getBoundingClientRect();
+    // const top = spanRect.top - outermostRect.top;
 
-    setDescriptionTop(top);
+    // setDescriptionTop(top);
     setActiveIndex(index);
     setShowDescription(true);
   };

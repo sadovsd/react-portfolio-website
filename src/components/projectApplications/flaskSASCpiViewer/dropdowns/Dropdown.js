@@ -8,7 +8,7 @@ function Dropdown({ options, onSelect, label, defaultSelectedOption, className})
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(defaultSelectedOption);
   const [isFocused, setIsFocused] = useState(false);
-  const [setIsOptionSelected] = useState(false);
+  // const [isOptionSelected, setIsOptionSelected] = useState(false);
 
   Dropdown.handleClickOutside = () => {
     setIsOpen(false);
@@ -24,13 +24,13 @@ function Dropdown({ options, onSelect, label, defaultSelectedOption, className})
     setSelectedOption(subOption.name);
     setIsOpen(false);
     setIsFocused(false);
-    setIsOptionSelected(true); // Set isOptionSelected to true when an option is selected
+    // setIsOptionSelected(true); // Set isOptionSelected to true when an option is selected
   };
 
   const handleDropDownClick = () => {
     setIsOpen(!isOpen);
     setIsFocused(true);
-    setIsOptionSelected(false); // Reset isOptionSelected to false when dropdown is clicked
+    // setIsOptionSelected(false); // Reset isOptionSelected to false when dropdown is clicked
   };
 
   return (

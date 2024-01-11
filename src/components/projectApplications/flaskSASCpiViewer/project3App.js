@@ -38,7 +38,7 @@ function Project3App() {
     // setForm(newForm);
     let filteredForm = form?.filter((expense) => expense.id !== id);
     setForm(filteredForm);
-    let checkUnretrievedYears = filteredForm?.filter((item) => !itemRetrievedYears[item?.itemCode]);
+    let checkUnretrievedYears = filteredForm?.filter((item) => !retrievedItems[item?.itemCode]);
     setRetrievedYears(checkUnretrievedYears.length ? false : true);
   };
 
@@ -119,11 +119,11 @@ function Project3App() {
       startYear: "",
       endYear: "",
       calcType: "",
-      seriesCode: "",
+      seriesCode: retrievedItems[option.item_code]?.seriesCode || "",
       itemName: option.name,
     };
 
-    let checkUnretrievedYears = newFormState.filter((item) => !itemRetrievedYears[item?.itemCode]);
+    let checkUnretrievedYears = newFormState.filter((item) => !retrievedItems[item?.itemCode]);
     setRetrievedYears(checkUnretrievedYears.length ? false : true);
 
     setForm(newFormState); // Update the state
@@ -203,14 +203,12 @@ function Project3App() {
 
   // a state for checking if years data was succesfully retrieved
   const [retrievedYears, setRetrievedYears] = useState(false);
-  const [itemRetrievedYears, setItemRetrievedYears] = useState({});
+  const [retrievedItems, setRetrievedItems] = useState({});
   const handleGetYears = (event) => {
     event.preventDefault();
     setCheckYearsError(false); // ?????? Reset error state at the start
     setIsLoading1(true);
-    const url = new URL(
-      "https://sas-flask-cpi-viewer.ashyisland-99d2d5a8.eastus.azurecontainerapps.io/getAvailableSeries"
-    ); // azure jawn
+    const url = new URL(process.env.REACT_APP_SAS_FLASK_ROUTE_ONE); // azure jawn
     // const url = new URL('http://localhost:8000/getAvailableSeries'); // docker jawn
     // const url = new URL('http://127.0.0.1:5000/getAvailableSeries'); // local jawn
 
@@ -254,10 +252,10 @@ function Project3App() {
         }));
 
         let updatedForm = form?.map((item, index) => {
-          if(!itemRetrievedYears[seriesArray[index]?.itemCode]){
-            setItemRetrievedYears(prev => ({
+          if(!retrievedItems[seriesArray[index]?.itemCode]){
+            setRetrievedItems(prev => ({
               ...prev,
-              [seriesArray[index]?.itemCode]: true
+              [seriesArray[index]?.itemCode]: seriesArray[index]
           }));
           }
           return { ...item, seriesCode: seriesArray[index]?.seriesCode };
@@ -324,9 +322,7 @@ function Project3App() {
     }
     // console.log('handleSubmit- we made it past error returns!');
     setIsLoading(true);
-    const url = new URL(
-      "https://sas-flask-cpi-viewer.ashyisland-99d2d5a8.eastus.azurecontainerapps.io/makeGraphReadyData"
-    ); // azure deployed jawn
+    const url = new URL(process.env.REACT_APP_SAS_FLASK_ROUTE_TWO); // azure deployed jawn
     // const url = new URL('http://localhost:8000/makeGraphReadyData'); // docker jawn
     // const url = new URL('http://127.0.0.1:5000/makeGraphReadyData'); // local jawn
 
@@ -456,7 +452,7 @@ function Project3App() {
                   <div className="flex flex-row gap-4 justify-center">
                     <Popup
                       text='You need to click "Check Available Years"'
-                      overrideIsVisible={itemRetrievedYears[form[index].itemCode]}
+                      overrideIsVisible={retrievedItems[form[index].itemCode]}
                     >
                       <div
                         className={`${
@@ -483,7 +479,7 @@ function Project3App() {
                     </Popup>
                     <Popup
                       text='You need to click "Check Available Years"'
-                      overrideIsVisible={itemRetrievedYears[form[index].itemCode]}
+                      overrideIsVisible={retrievedItems[form[index].itemCode]}
                     >
                       <div
                         className={`${
@@ -512,7 +508,7 @@ function Project3App() {
                   <div className="flex flex-row gap-4 justify-center">
                     <Popup
                       text='You need to click "Check Available Years"'
-                      overrideIsVisible={itemRetrievedYears[form[index].itemCode]}
+                      overrideIsVisible={retrievedItems[form[index].itemCode]}
                     >
                       <div
                         className={`${
