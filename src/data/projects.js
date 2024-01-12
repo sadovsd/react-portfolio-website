@@ -2,7 +2,7 @@
 
 import project1 from '../assets/lens_regen.png';
 import project2 from '../assets/project2.png';
-import project3 from '../assets/project3.png';
+import LLMTracker from '../assets/LLMTracker.gif';
 import stoman from '../assets/stoman.png';
 
 // the convention for global variables is uppercase
@@ -24,7 +24,7 @@ const PROJECTS = [
         date: 'June 2023',
         description: "This is the website you are currently visting! I built it because I wanted to have digital record of some of the labor-intensive creative and intellectual content I've produced. I believe that a visually appealing and thoughtfully designed website will always be more effective at getting ideas across than a pile of GitHub files.",
         tags: 'Frontend',
-        technologies: ['React', 'Tailwind CSS', 'REST API'],
+        technologies: ['React', 'Tailwind CSS', 'Azure Static Web App', 'Midjourney'],
         image: stoman,
         hasApp: false,
         appPath: ''
@@ -35,19 +35,52 @@ const PROJECTS = [
         date: 'July 2023',
         description: 'At the heart of this application is a SAS macro that parses information from multiple offical goverment data files and generates a graph of consumer price index (CPI) trends, according to specified parameters. I implemented a backend into this portfolio website to allow a user to connect to the macro and obtain a visualization.',
         tags: 'Data Manipulation/ Backend',
-        technologies: ['SAS', 'SQL', 'Flask', 'Azure', 'Python', 'SAS Viya'],
+        technologies: ['SAS',  'SQL', 'saspy', 'Flask', 'Python', 'Azure Container App'],
         image: project2,
         hasApp: true,
         appPath: '/applications/flaskSASCpiViewer'
     },
     {
         id: 4,
-        title: 'Algorithms to Optimize Health',
-        date: 'August 2023',
+        title: 'LLM Paper Tracker and Dashboard Jawn',
+        date: 'December 2023',
         description: "Today, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
-        tags: 'Clustering/ Visualization',
-        technologies: ['Python', 'Flask'],
-        image: project3,
+        tags: 'Clustering/ Dashboard',
+        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
+        image: LLMTracker,
+        hasApp: true,
+        appPath: '/applications/healthAlgorithmsApp'
+    },
+    {
+        id: 5,
+        title: 'Jawn 5',
+        date: 'December 2023',
+        description: "Today, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
+        tags: 'Clustering/ Dashboard',
+        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
+        image: LLMTracker,
+        hasApp: true,
+        appPath: '/applications/healthAlgorithmsApp'
+    },
+    {
+        id: 6,
+        title: 'Jawn Jawn',
+        date: 'December 2023',
+        description: "Today, more than ever, we see a misalignment between individuals goals, and self destructToday, more than ever, we see a misalignment between individuals goals, and self destructToday, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
+        tags: 'Clustering/ Dashboard',
+        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
+        image: LLMTracker,
+        hasApp: true,
+        appPath: '/applications/healthAlgorithmsApp'
+    },
+    {
+        id: 7,
+        title: 'Jawn 99',
+        date: 'December 2069',
+        description: "Today, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
+        tags: 'Clustering/ Dashboard',
+        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
+        image: LLMTracker,
         hasApp: true,
         appPath: '/applications/healthAlgorithmsApp'
     }

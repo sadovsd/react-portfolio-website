@@ -415,7 +415,10 @@ function Project3App() {
       <div className=" flex ssm:flex-col md:flex-row ssm:max-w-[320px] sm:max-w-none gap-8">
         {/* Information about the app */}
         <div className="basis-5/12 ml-[0rem] mr-[0rem] ssm:mb-[4rem] sm:mb-0 text-left">
-          <h3 className="text-blue-500 ssm:mb-4 sm:mb-0 ssm:text-5xl sm:text-xl">
+          <p>
+          The data is seasonally unadjusted and is the U.S average.
+          </p>
+          {/* <h3 className="text-blue-500 ssm:mb-4 sm:mb-0 ssm:text-5xl sm:text-xl">
             Note:
           </h3>
           <h3 className="text-slate-700">
@@ -429,7 +432,7 @@ function Project3App() {
             However, some expense types have a certain period/s where data was
             collected every 12, 6, or 3 months before it started to be collected
             every month.
-          </h3>
+          </h3> */}
         </div>
 
         <form className="" onSubmit={handleSubmit}>
