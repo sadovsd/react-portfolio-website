@@ -61,29 +61,8 @@ const PROJECTS = [
         image: LLMTracker,
         hasApp: true,
         appPath: '/applications/healthAlgorithmsApp'
-    },
-    {
-        id: 6,
-        title: 'Jawn Jawn',
-        date: 'December 2023',
-        description: "Today, more than ever, we see a misalignment between individuals goals, and self destructToday, more than ever, we see a misalignment between individuals goals, and self destructToday, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
-        tags: 'Clustering/ Dashboard',
-        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
-        image: LLMTracker,
-        hasApp: true,
-        appPath: '/applications/healthAlgorithmsApp'
-    },
-    {
-        id: 7,
-        title: 'Jawn 99',
-        date: 'December 2069',
-        description: "Today, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
-        tags: 'Clustering/ Dashboard',
-        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
-        image: LLMTracker,
-        hasApp: true,
-        appPath: '/applications/healthAlgorithmsApp'
     }
+
     // {
     //     id: 4,
     //     title: 'Human Genome Annotation Comparison',
