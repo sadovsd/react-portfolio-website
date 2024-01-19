@@ -11,7 +11,7 @@ const Project = props => {
 
     const { id, title, date, tags, image, description, technologies, hasApp, appPath } = props.project;
     return (
-        <div className='flex flex-wrap flex-col items-center gap-9 max-w-[362px] rounded-2xl overflow-hidden shadow-md transition-all duration-100 transform-gpu hover:-translate-y-2 hover:shadow-lg'>
+        <div className='flex flex-wrap flex-col items-center gap-9 rounded-2xl overflow-hidden shadow-md transition-all duration-100 transform-gpu hover:-translate-y-2 hover:shadow-lg'>
             <img className='h-[22rem] mt-4 object-cover' src={image} alt='project'></img>
             <div className='mt-8 text-left px-10'>
                 <h2>{title}</h2>
@@ -34,11 +34,12 @@ const Project = props => {
                     See More
                 </Link>
                 {hasApp &&
-                <Link to={appPath}>
+                <Link to={appPath} target="_blank" rel="noopener noreferrer">
                     <button className="bg-white hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg border border-gray-200">
                         Use App
                     </button>
-                </Link>}
+                </Link>
+                }
             </div>
         </div>
     )
@@ -48,8 +49,8 @@ const Project = props => {
 const Project4 = () =>  (
     <div className='container mt-20 mb-20'>
         <h1 className=''>Highlighted Projects</h1>
-        <h3 className='mt-10'>Some <span className='text-blue-500'>data science</span> and <span className='text-blue-500'>software development</span> projects I've been working on.</h3>
-        <div className='mt-40 sm:mx-10 items-start place-items-center grid grid-cols-auto md:grid-cols-1fr sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12'>
+        <h3 className='mt-10'>Some <span className='text-green-600'>data science</span> and <span className='text-green-600'>software development</span> projects I've been working on.</h3>
+        <div className='mt-40 sm:mx-[7rem] items-start place-items-center grid grid-cols-auto md:grid-cols-1fr sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-20'>
             {PROJECTS.map((project, id) => (
                 <Project 
                     key={id} 
@@ -62,3 +63,4 @@ const Project4 = () =>  (
 
 
 export default Project4;
+

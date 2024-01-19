@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import PlotlyGraph from './plotlyGraph';
 import itemNamesData from './cpi_items_mapping.json'; // Import JSON data directly
 import Dropdown from './dropdowns/Dropdown';
-import SingleDropdown from './dropdowns/SingleDropdown';
 import { PropagateLoader, PulseLoader } from 'react-spinners';
 import { Checkmark } from 'react-checkmark';
 

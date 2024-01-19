@@ -5,11 +5,11 @@ const IconsWithText = ({ leftIcon, leftText, rightIcon, rightText, className }) 
     <div className={"flex items-center " + className}>
       <div className="flex items-center mr-4">
         {leftIcon}
-        <span className="ml-1 leading-none whitespace-nowrap">{leftText}</span>
+        <p className="ml-1 leading-none whitespace-nowrap">{leftText}</p>
       </div>
       <div className="flex items-center">
         {rightIcon}
-        <span className="ml-1 leading-none whitespace-nowrap">{rightText}</span>
+        <p className="ml-1 leading-none">{rightText}</p>
       </div>
     </div>
   );

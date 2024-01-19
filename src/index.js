@@ -11,9 +11,9 @@ import Project1 from './components/projectArticles/Project1';
 import Project2 from './components/projectArticles/Project2';
 import Project3 from './components/projectArticles/Project3';
 import Project4 from './components/projectArticles/Project4';
+import Project5 from './components/projectArticles/Project5';
 import Applications from './components/headerPages/Applications';
 import Project3App from './components/projectApplications/flaskSASCpiViewer/project3App';
-import Project4App from './components/projectApplications/project4App/project4App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,8 +30,8 @@ root.render(
         <Route path='/projects/project2' element={<Footer><Header><Project2 /></Header></Footer>} />
         <Route path='/projects/project3' element={<Footer><Header><Project3 /></Header></Footer>} />
         <Route path='/projects/project4' element={<Footer><Header><Project4 /></Header></Footer>} />
+        <Route path='/projects/project5' element={<Footer><Header><Project5 /></Header></Footer>} />
         <Route path='/applications/flaskSASCpiViewer' element={<Footer><Header><Project3App /></Header></Footer>} />
-        <Route path='/applications/healthAlgorithmsApp' element={<Footer><Header><Project4App /></Header></Footer>} />
       </Routes>
   </HashRouter>
 );

@@ -11,6 +11,7 @@ body {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 300;
+  color: rgb(58, 60, 62) !important;
 }
 
 h1 {
@@ -53,7 +54,8 @@ h3 {
   width: 0;
   height: 4px;
   border-radius: 2px;
-  background-color: #0072E5;
+  --tw-text-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-text-opacity));
   transition: width 0.3s ease-out;
 }
 
@@ -108,6 +110,19 @@ h3 {
 
 .line:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.heading-with-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading-with-line:before{
+  content: "";
+  flex: 1 1;
+  border-bottom: 3px solid rgb(100 116 139 / 1);
+  margin: auto;
+  margin-right: 8px
 }
 
 /* this is how we define animations in css */

@@ -1,9 +1,11 @@
 // this appears to be a js (javascript) file and not a jsx file
 
 import project1 from '../assets/lens_regen.png';
-import project2 from '../assets/project2.png';
-import LLMTracker from '../assets/LLMTracker.gif';
-import stoman from '../assets/stoman.png';
+import project2 from '../assets/midjourney.png';
+import project3 from '../assets/cpi_viewer.png';
+import project4 from '../assets/LLMTracker.gif';
+import project5 from '../assets/cpp3.png';
+
 
 // the convention for global variables is uppercase
 const PROJECTS = [
@@ -24,8 +26,8 @@ const PROJECTS = [
         date: 'June 2023',
         description: "This is the website you are currently visting! I built it because I wanted to have digital record of some of the labor-intensive creative and intellectual content I've produced. I believe that a visually appealing and thoughtfully designed website will always be more effective at getting ideas across than a pile of GitHub files.",
         tags: 'Frontend',
-        technologies: ['React', 'Tailwind CSS', 'Azure Static Web App', 'Midjourney'],
-        image: stoman,
+        technologies: ['React', 'Tailwind CSS', 'Midjourney', 'Azure Static Web Apps'],
+        image: project2,
         hasApp: false,
         appPath: ''
     },
@@ -35,54 +37,33 @@ const PROJECTS = [
         date: 'July 2023',
         description: 'At the heart of this application is a SAS macro that parses information from multiple offical goverment data files and generates a graph of consumer price index (CPI) trends, according to specified parameters. I implemented a backend into this portfolio website to allow a user to connect to the macro and obtain a visualization.',
         tags: 'Data Manipulation/ Backend',
-        technologies: ['SAS',  'SQL', 'saspy', 'Flask', 'Python', 'Azure Container App'],
-        image: project2,
+        technologies: ['SAS', 'SQL', 'Python', 'SASPy', 'Flask', 'Docker', 'Azure Container Apps'],
+        image: project3,
         hasApp: true,
         appPath: '/applications/flaskSASCpiViewer'
     },
     {
         id: 4,
-        title: 'LLM Paper Tracker and Dashboard Jawn',
-        date: 'December 2023',
-        description: "Today, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
+        title: 'Research Paper Visualizer',
+        date: 'November 2023',
+        description: "The recent pace of research on AI and large language models has been staggering. In this project, I created a dashboard that visualizes the semantic location of almost 15k reseach papers about LLMs in the past year, along with other interactive visualizations to help a user further understand the research landscape.",
         tags: 'Clustering/ Dashboard',
-        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
-        image: LLMTracker,
+        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', 'RShiny'],
+        image: project4,
         hasApp: true,
-        appPath: '/applications/healthAlgorithmsApp'
+        appPath: 'https://davydsadovskyy.shinyapps.io/llm-papers-2023-dashboard/'
     },
     {
         id: 5,
-        title: 'Jawn 5',
-        date: 'December 2023',
-        description: "Today, more than ever, we see a misalignment between individuals goals, and self destructive actions and tendencies. A way forward is tracking loads of biomarkers and then using machine learning to categorize behaviours as bad or good for wellbeing, leading to better goal alignment. Here, I do this with sleep data.",
-        tags: 'Clustering/ Dashboard',
-        technologies: ['Semantic Scholar API', 'Python', 'BERTopic', 'R', "RShiny"],
-        image: LLMTracker,
-        hasApp: true,
-        appPath: '/applications/healthAlgorithmsApp'
+        title: 'Calibrated Power Prior Optimization',
+        date: 'January 2023',
+        description: "The power prior is a ",
+        tags: 'Bayesian / Simulation',
+        technologies: ['R', 'RStan'],
+        image: project5,
+        hasApp: false,
+        appPath: ''
     }
-
-    // {
-    //     id: 4,
-    //     title: 'Human Genome Annotation Comparison',
-    //     description: 'Visually comparing genome annotion versions and [querying] gene information based on user input',
-    //     includes: ['Machine Learning', 'Visualization', 'Backend', 'App'],
-    //     technologies: ['Python', 'Flask'],
-    //     image: project3
-    // }
-    // {
-    //     title: 'MITE Identification in Rice',
-    //     description: "A classification model that predicts which DNA sequences are Miniature Inverted-repeat Transposable Elements (MITE)",
-    //     link: 'https://github.com/15Dkatz',
-    //     image: project4
-    // },
-    // {
-    //     title: 'Supplement Benefit Analysis',
-    //     description: "A machine learning project that predicts which supplements are actually worth taking, given an individual's specific biomarker data",
-    //     link: 'https://github.com/15Dkatz',
-    //     image: project5
-    // }
 ]; 
 
 export default PROJECTS; // "this shares the projects array with the rest of the code base"

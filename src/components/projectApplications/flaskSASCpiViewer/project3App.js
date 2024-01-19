@@ -25,7 +25,7 @@ function Project3App() {
   // Allow creation of multiple rows of expense type inputs
   const addExpenseType = () => {
     // setForm([...form, initialFormState]);
-    setForm((form)=>[...form, { ...initialFormState, id: Date.now() }]); // Generate a new id for each new item
+    setForm((form) => [...form, { ...initialFormState, id: Date.now() }]); // Generate a new id for each new item
     // since a new expense type was selected, we need to trigger the get years button to go back to clickable state
     setIsFormChanged(true);
     // clear the years retrieval success button so its clickable again for a new expense type
@@ -38,7 +38,9 @@ function Project3App() {
     // setForm(newForm);
     let filteredForm = form?.filter((expense) => expense.id !== id);
     setForm(filteredForm);
-    let checkUnretrievedYears = filteredForm?.filter((item) => !retrievedItems[item?.itemCode]);
+    let checkUnretrievedYears = filteredForm?.filter(
+      (item) => !retrievedItems[item?.itemCode]
+    );
     setRetrievedYears(checkUnretrievedYears.length ? false : true);
   };
 
@@ -52,6 +54,7 @@ function Project3App() {
   const [backendError, setBackendError] = useState(false);
 
   // jawns for getting/processing the response from flask backend when creating graphs
+  const [availableSeriesData, SetAvailableSeriesData] = useState([]);
   const [csvData, setCsvData] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -123,7 +126,9 @@ function Project3App() {
       itemName: option.name,
     };
 
-    let checkUnretrievedYears = newFormState.filter((item) => !retrievedItems[item?.itemCode]);
+    let checkUnretrievedYears = newFormState.filter(
+      (item) => !retrievedItems[item?.itemCode]
+    );
     setRetrievedYears(checkUnretrievedYears.length ? false : true);
 
     setForm(newFormState); // Update the state
@@ -243,6 +248,7 @@ function Project3App() {
       })
       .then((data) => {
         let parsedData = JSON.parse(data); // Parse JSON data
+        SetAvailableSeriesData(parsedData);
 
         let seriesArray = parsedData.map((item) => ({
           startYear: item.data[0],
@@ -252,11 +258,11 @@ function Project3App() {
         }));
 
         let updatedForm = form?.map((item, index) => {
-          if(!retrievedItems[seriesArray[index]?.itemCode]){
-            setRetrievedItems(prev => ({
+          if (!retrievedItems[seriesArray[index]?.itemCode]) {
+            setRetrievedItems((prev) => ({
               ...prev,
-              [seriesArray[index]?.itemCode]: seriesArray[index]
-          }));
+              [seriesArray[index]?.itemCode]: seriesArray[index],
+            }));
           }
           return { ...item, seriesCode: seriesArray[index]?.seriesCode };
         });
@@ -304,7 +310,8 @@ function Project3App() {
         !expense.seriesCode
       ) {
         setCreateGraphsError(
-          `All fields must be filled in for expense type at index ${i + 1}`
+          // `All fields must be filled in for expense type at index ${i + 1}`
+          `All fields must be filled in`
         );
         // console.log('handleSubmit- error set: "all fields must be filled in"');
         return;
@@ -408,169 +415,173 @@ function Project3App() {
 
   return (
     // <div className='container m-10 bg-blue-200'>
-    <div className="container mt-[4rem] flex flex-col items-center">
-      <h1 className="mb-24">SAS Consumer Price Index Trend Viewer</h1>
+    <div>
+      <div className="container mt-[4rem] flex flex-col items-center">
+        <h1 className="mb-24">SAS Consumer Price Index Trend Viewer</h1>
 
-      {/* Information about the app on the left and the form on the right */}
-      <div className=" flex ssm:flex-col md:flex-row ssm:max-w-[320px] sm:max-w-none gap-8">
-        {/* Information about the app */}
-        <div className="basis-5/12 ml-[0rem] mr-[0rem] ssm:mb-[4rem] sm:mb-0 text-left">
-          <p>
-          The data is seasonally unadjusted and is the U.S average.
-          </p>
-          {/* <h3 className="text-blue-500 ssm:mb-4 sm:mb-0 ssm:text-5xl sm:text-xl">
-            Note:
-          </h3>
-          <h3 className="text-slate-700">
-            The data is seasonally unadjusted and is the U.S average.
-          </h3>
-          <h3 className="text-blue-500 mt-10 ssm:mb-4 sm:mb-0 ssm:text-5xl sm:text-xl">
-            Note:
-          </h3>
-          <h3 className="text-slate-700">
-            Monthly cpi data collection is availabe for all expense types.
-            However, some expense types have a certain period/s where data was
-            collected every 12, 6, or 3 months before it started to be collected
-            every month.
-          </h3> */}
+        {/* Information about the app on the left and the form on the right */}
+        <div
+          className={`${form.length <= 1 ? "max-w-[770px]" : "max-w-[820px]"} text-left mb-12`}
+        >
+          {/* Information about the app */}
+          <div className="mb-16 text-[1.9rem] leading-relaxed">
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+              <li>
+                The data is seasonally unadjusted and is the U.S average.
+              </li>
+              <li>
+                Monthly cpi data collection is available for all expense types.
+                However, some expense types have a certain period/s where data was
+                collected every 12, 6, or 3 months before it started to be
+                collected every month.
+              </li>
+            </ul>
+          </div>
+
         </div>
 
-        <form className="" onSubmit={handleSubmit}>
-          {form.map((expense, index) => {
-            // console.log(
-            //   'isItemCodeInSeriesInfo(form[index].itemCode',
-            //   isItemCodeInSeriesInfo(form[index].itemCode)
-            // );
-            // console.log('Object.keys(seriesInfo[index]).length', Object.keys(seriesInfo[index]).length);
-            return (
-              // <div key={index}>
-              <div key={expense.id} className="mb-10">
-                <div className=" flex flex-col sm:flex-row gap-4 justify-center items-center sm:justify-between ">
-                  <Dropdown
-                    options={options}
-                    onSelect={(option) => handleSelect(option, index)}
-                    defaultSelectedOption={expense.itemCode}
-                    label="Expense Type"
-                  />
-                  <div className="flex flex-row gap-4 justify-center">
-                    <Popup
-                      text='You need to click "Check Available Years"'
-                      overrideIsVisible={retrievedItems[form[index].itemCode]}
-                    >
-                      <div
-                        className={`${
-                          !isItemCodeInSeriesInfo(form[index].itemCode)
-                            ? "cursor-not-allowed"
-                            : ""
-                        } w-[120px] border-[#add8e6] rounded-md`}
+        <div>
+          <form className="" onSubmit={handleSubmit}>
+            {form.map((expense, index) => {
+              // console.log(
+              //   'isItemCodeInSeriesInfo(form[index].itemCode',
+              //   isItemCodeInSeriesInfo(form[index].itemCode)
+              // );
+              // console.log('Object.keys(seriesInfo[index]).length', Object.keys(seriesInfo[index]).length);
+              return (
+                // <div key={index}>
+                <div key={expense.id} className="mb-10">
+                  <div className="flex flex-col gap-4 justify-center items-center md:justify-between md:flex-row ">
+                    <Dropdown
+                      options={options}
+                      onSelect={(option) => handleSelect(option, index)}
+                      defaultSelectedOption={expense.itemCode}
+                      label="Expense Type"
+                    />
+                    <div className="flex flex-row gap-4 justify-center">
+                      <Popup
+                        text='You need to click "Check Available Years"'
+                        overrideIsVisible={retrievedItems[form[index].itemCode]}
                       >
-                        <SingleDropdown
+                        <div
                           className={`${
                             !isItemCodeInSeriesInfo(form[index].itemCode)
-                              ? "pointer-events-none"
+                              ? "cursor-not-allowed"
                               : ""
-                          }`}
-                          options={YearOptions[index]}
-                          onSelect={(option) =>
-                            handleStartYearSelect(option, index)
-                          }
-                          placeholder="Start Year"
-                          label="Start Year"
-                          value={form[index]?.startYear}
-                        />
-                      </div>
-                    </Popup>
-                    <Popup
-                      text='You need to click "Check Available Years"'
-                      overrideIsVisible={retrievedItems[form[index].itemCode]}
-                    >
-                      <div
-                        className={`${
-                          !isItemCodeInSeriesInfo(form[index].itemCode)
-                            ? "cursor-not-allowed"
-                            : ""
-                        } w-[120px] border-[#add8e6] rounded-md`}
-                      >
-                        <SingleDropdown
-                          className={`${
-                            !isItemCodeInSeriesInfo(form[index].itemCode)
-                              ? "pointer-events-none"
-                              : ""
-                          }`}
-                          options={YearOptions[index]}
-                          onSelect={(option) =>
-                            handleEndYearSelect(option, index)
-                          }
-                          placeholder="End Year"
-                          label="End Year"
-                          value={form[index]?.endYear}
-                        />
-                      </div>
-                    </Popup>
-                  </div>
-                  <div className="flex flex-row gap-4 justify-center">
-                    <Popup
-                      text='You need to click "Check Available Years"'
-                      overrideIsVisible={retrievedItems[form[index].itemCode]}
-                    >
-                      <div
-                        className={`${
-                          !isItemCodeInSeriesInfo(form[index].itemCode)
-                            ? "cursor-not-allowed"
-                            : ""
-                        } w-[200px] ${form.length <= 1 ? "xs:w-[250px]" : "xs:w-[202px]"} border-[#add8e6] rounded-md`}
-                      >
-                        <SingleDropdown
-                          className={`${
-                            !isItemCodeInSeriesInfo(form[index].itemCode)
-                              ? "pointer-events-none"
-                              : ""
-                          }`}
-                          options={calcTypeOptions[0]}
-                          onSelect={(option) =>
-                            handleCalcTypeSelect(option, index)
-                          }
-                          placeholder="Calculation Method"
-                          label="Calculation Method"
-                          value={form[index]?.calcType}
-                        />
-                      </div>
-                    </Popup>
-                    {form.length > 1 && (
-                      <div className="">
-                        <button
-                          type="button"
-                          className="h-full pr-[10px] pl-[5px] flex items-center text-red-500 rounded-md hover:bg-red-500 hover:text-white focus:outline-none order-last sm:order-none "
-                          onClick={() => deleteExpenseType(expense.id)}
+                          } w-[120px] border-[#add8e6] rounded-md`}
                         >
-                          <AiOutlineDelete className="text-3xl ml-2" />
-                        </button>
-                      </div>
-                    )}
+                          <SingleDropdown
+                            className={`${
+                              !isItemCodeInSeriesInfo(form[index].itemCode)
+                                ? "pointer-events-none"
+                                : ""
+                            }`}
+                            options={YearOptions[index]}
+                            onSelect={(option) =>
+                              handleStartYearSelect(option, index)
+                            }
+                            placeholder="Start Year"
+                            label="Start Year"
+                            value={form[index]?.startYear}
+                          />
+                        </div>
+                      </Popup>
+                      <Popup
+                        text='You need to click "Check Available Years"'
+                        overrideIsVisible={retrievedItems[form[index].itemCode]}
+                      >
+                        <div
+                          className={`${
+                            !isItemCodeInSeriesInfo(form[index].itemCode)
+                              ? "cursor-not-allowed"
+                              : ""
+                          } w-[120px] border-[#add8e6] rounded-md`}
+                        >
+                          <SingleDropdown
+                            className={`${
+                              !isItemCodeInSeriesInfo(form[index].itemCode)
+                                ? "pointer-events-none"
+                                : ""
+                            }`}
+                            options={YearOptions[index]}
+                            onSelect={(option) =>
+                              handleEndYearSelect(option, index)
+                            }
+                            placeholder="End Year"
+                            label="End Year"
+                            value={form[index]?.endYear}
+                          />
+                        </div>
+                      </Popup>
+                    </div>
+                    <div className="flex flex-row gap-4 justify-center">
+                      <Popup
+                        text='You need to click "Check Available Years"'
+                        overrideIsVisible={retrievedItems[form[index].itemCode]}
+                      >
+                        <div
+                          className={`${
+                            !isItemCodeInSeriesInfo(form[index].itemCode)
+                              ? "cursor-not-allowed"
+                              : ""
+                          } 2xl:w-[250px] md:w-[200px] ${
+                            form.length <= 1 ? "sm:w-[250px]" : "w-[202px]"
+                          } border-[#add8e6] rounded-md`}
+                        >
+                          <SingleDropdown
+                            className={`${
+                              !isItemCodeInSeriesInfo(form[index].itemCode)
+                                ? "pointer-events-none"
+                                : ""
+                            }`}
+                            options={calcTypeOptions[0]}
+                            onSelect={(option) =>
+                              handleCalcTypeSelect(option, index)
+                            }
+                            placeholder="Calculation Method"
+                            label="Calculation Method"
+                            value={form[index]?.calcType}
+                          />
+                        </div>
+                      </Popup>
+                      {form.length > 1 && (
+                        <div className="">
+                          <button
+                            type="button"
+                            className="h-full pr-[10px] pl-[5px] flex items-center text-red-500 rounded-md hover:bg-red-500 hover:text-white focus:outline-none order-last sm:order-none "
+                            onClick={() => deleteExpenseType(expense.id)}
+                          >
+                            <AiOutlineDelete className="text-3xl ml-2" />
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
 
-          <button
-            // Apparenlty, we need to specify type=button cuz when you click on the "Add Expense" button,
-            // it tries to submit the form, because the default type of a button inside a form is submit,
-            // which triggers the form's onSubmit event
-            type="button"
-            className={`font-medium w-[14rem] py-2 px-4 text-green-500 border-[1.5px] border-green-500 rounded-md hover:bg-green-500 hover:text-white focus:outline-none ${form.length === 4 ? "hidden" : ""}`}
-            onClick={addExpenseType}
-          >
-            Add Expense
-          </button>
+            <button
+              // Apparenlty, we need to specify type=button cuz when you click on the "Add Expense" button,
+              // it tries to submit the form, because the default type of a button inside a form is submit,
+              // which triggers the form's onSubmit event
+              type="button"
+              className={`font-medium w-[14rem] py-2 px-4 text-green-500 border-[1.5px] border-green-500 rounded-md hover:bg-green-500 hover:text-white focus:outline-none ${
+                form.length === 4 ? "hidden" : ""
+              }`}
+              onClick={addExpenseType}
+            >
+              Add Expense
+            </button>
 
-          {/* The button jawns */}
-          <div className="mt-14 flex flex-row justify-center items-center ml-[0rem]">
-            {/* Get years button */}
-            <div className="relative flex items-center">
-              <button
-                type="button"
-                className={`py-2 px-4 font-semibold rounded-lg border-[1.5px] border-gray-200 
+            {/* The button jawns */}
+            <div className="mt-14 flex flex-row justify-center ml-[0rem]">
+              {/* Get years button */}
+              <div>
+                <div className="relative flex items-center">
+                  <button
+                    type="button"
+                    className={`py-2 px-4 font-semibold rounded-lg border-[1.5px] border-gray-200 
                                             flex justify-center items-center transition-all duration-200 ease-in-out 
                                             ${
                                               isLoading1 || retrievedYears
@@ -586,85 +597,126 @@ function Project3App() {
                                                 ? "bg-gray-200"
                                                 : "bg-white hover:bg-gray-200"
                                             }`}
-                onClick={(event) => handleGetYears(event)}
-                // Disable the button when loading or when there is a backend error or when series data was retrieved succesfully
-                // disabled={!seriesInfo.length === 0 || isLoading1 || backendError}
-                disabled={!isFormChanged || isLoading1 || backendError}
-              >
-                {!isLoading1 ? (
-                  !retrievedYears ? (
-                    !backendError ? (
-                      "Check Available Years"
+                    onClick={(event) => handleGetYears(event)}
+                    // Disable the button when loading or when there is a backend error or when series data was retrieved succesfully
+                    // disabled={!seriesInfo.length === 0 || isLoading1 || backendError}
+                    disabled={!isFormChanged || isLoading1 || backendError}
+                  >
+                    {!isLoading1 ? (
+                      !retrievedYears ? (
+                        !backendError ? (
+                          "Check Available Years"
+                        ) : (
+                          "Backend Error"
+                        )
+                      ) : (
+                        "Years Retrieved"
+                      )
                     ) : (
-                      "Backend Error"
-                    )
+                      <span className="pr-2">Loading</span>
+                    )}
+                    {isLoading1 && (
+                      <PulseLoader
+                        className="mt-3.5"
+                        speedMultiplier={0.75}
+                        color="#3a3c3e"
+                        size={3.5}
+                      />
+                    )}
+                  </button>
+                  {retrievedYears && (
+                    <div className="ml-3">
+                      <Checkmark size="29px" color="#16a836" />
+                    </div>
+                  )}
+                  {CheckYearsError && (
+                    <div className="absolute left-0 top-[3.3rem] mt-1 ml-1 text-[1.15rem] font-medium text-red-500">
+                      Select an expense type
+                    </div>
+                  )}
+                </div>
+                <div
+                  className={`text-left mt-[10px] ${CheckYearsError ? "pt-[15px]" : ""}`}
+                >
+                  {availableSeriesData.length ? (
+                    <div>
+                      <div>SAS Session Retries:</div>
+                      {availableSeriesData.map((value, index) => (
+                        <div key={index}>
+                          Worker {index + 1}: {value.retries}
+                        </div>
+                      ))}
+                    </div>
                   ) : (
-                    "Years Retrieved"
-                  )
-                ) : (
-                  <span className="pr-2">Loading</span>
-                )}
-                {isLoading1 && (
-                  <PulseLoader
-                    className="mt-3.5"
-                    speedMultiplier={0.75}
-                    color="#3a3c3e"
-                    size={3.5}
-                  />
-                )}
-              </button>
-              {retrievedYears && (
-                <div className="ml-3">
-                  <Checkmark size="29px" color="#16a836" />
+                    ""
+                  )}
                 </div>
-              )}
-              {CheckYearsError && (
-                <div className="absolute left-0 top-[3.3rem] mt-1 ml-1 text-[1.15rem] font-medium text-red-500">
-                  Select an expense type
+              </div>
+              {/* Create graphs button */}
+              <div>
+                <div className="relative flex ml-[2rem]">
+                  <button
+                    className="w-[14rem] py-2 px-4 font-semibold text-blue-500 border-[1.5px] border-blue-500 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none"
+                    onClick={handleSubmit}
+                  >
+                    Create Graphs
+                  </button>
+                  {CreateGraphsError && (
+                    <div className="absolute left-0 top-[3.3rem] mt-1 ml-1 text-[1.15rem] font-medium text-red-500 text-left w-[145px]">
+                      {CreateGraphsError}
+                    </div>
+                  )}
                 </div>
-              )}
+                <div
+                  className={`text-left mt-[10px] ${retrievedYears ? "ml-[20px]" : ""} ${
+                    CreateGraphsError ? "pt-[35px]" : ""
+                  }`}
+                >
+                  {csvData && (
+                    <div>
+                      <div>SAS Session Retries:</div>
+                      {Object.values(JSON.parse(csvData)).map(
+                        (value, index) => (
+                          <div key={index}>
+                            Worker {index + 1}: {value.retries}
+                          </div>
+                        )
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
-            {/* Create graphs button */}
-            <div className="relative flex items-center ml-[2rem]">
-              <button
-                className="w-[14rem] py-2 px-4 font-semibold text-blue-500 border-[1.5px] border-blue-500 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none"
-                onClick={handleSubmit}
-              >
-                Create Graphs
-              </button>
-              {CreateGraphsError && (
-                <div className="absolute left-0 top-[3.3rem] mt-1 ml-1 text-[1.15rem] font-medium text-red-500 text-left">
-                  {CreateGraphsError}
-                </div>
-              )}
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-
-      {/* Loading Spinner and subsequent cpi trend graphs */}
-      {isLoading ? (
-        <div className="mt-[8rem] flex flex-col justify-center items-center">
-          <PropagateLoader color="#3366CC" size={25} />
-          <p className="mt-12 ml-8">Please Wait</p>
-        </div>
-      ) : backendError2 ? (
-        <div className="text-red-600">Error occurred while fetching data.</div>
-      ) : csvData ? (
-        // render each graph based on the keys in the csv json data from backend
-        <div className="bg-slate-100 grid grid-cols-2 gap-x-[15rem] mt-[50px]">
-          {Object.keys(JSON.parse(csvData)).map((key, index) => (
-            <div key={index} className="mb-[20px]">
-              <PlotlyGraph
-                className={""}
-                jsonData={csvData}
-                keyProp={key}
-                title={graphTitle[index]}
-              />
-            </div>
-          ))}
-        </div>
-      ) : null}
+      <div className="w-full">
+        {/* Loading Spinner and subsequent cpi trend graphs */}
+        {isLoading ? (
+          <div className="mt-[8rem] flex flex-col justify-center items-center">
+            <PropagateLoader color="#3366CC" size={25} />
+            <p className="mt-12 ml-8">Please Wait</p>
+          </div>
+        ) : backendError2 ? (
+          <div className="text-red-600">
+            Error occurred while fetching data.
+          </div>
+        ) : csvData ? (
+          // render each graph based on the keys in the csv json data from backend
+          <div className="mt-[50px] flex flex-wrap w-full justify-center">
+            {Object.keys(JSON.parse(csvData)).map((key, index) => (
+              <div key={index} className="mb-[20px] basis-1/2">
+                <PlotlyGraph
+                  className={""}
+                  jsonData={csvData}
+                  keyProp={key}
+                  title={graphTitle[index]}
+                />
+              </div>
+            ))}
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }

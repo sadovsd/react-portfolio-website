@@ -4,7 +4,7 @@ import Plot from 'react-plotly.js';
 function PlotlyGraph({ className, jsonData, keyProp, title }) {
     const dataDict = JSON.parse(jsonData); // Parse JSON string into an object
     const csvData = dataDict[keyProp];
-    const noOfRetries = csvData.retries || 0;
+    // const noOfRetries = csvData.retries || 0;
     const csvRows = csvData.data.split('\n');
     const xData = [];
     const yData = [];
@@ -69,13 +69,13 @@ function PlotlyGraph({ className, jsonData, keyProp, title }) {
     };
 
     return (
-        <div className={`${className} w-max`}>
+        <div className={`${className}`}>
             <Plot 
                 data={data} 
                 layout={layout} 
                 config={config}
             />
-            <div className='bg-white mt-[-5px] font-bold'>Worker assigned to retrieve data for this graph required {noOfRetries} SAS session connection retries</div>
+            {/* <div className='bg-white mt-[-5px] font-bold'>Worker assigned to retrieve data for this graph required {noOfRetries} SAS session connection retries</div> */}
         </div>
     );
     

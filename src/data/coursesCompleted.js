@@ -103,6 +103,46 @@ const COMPLETED_COURSES = [
             <p className="course-descr-title">MTH 231. Elements of Discrete Mathematics. (3)</p>
             <p className="course-descr-body">Service course. Topics, techniques and terminology in discrete mathematics: logic, sets, proof by mathematical induction, relations, counting.</p>
         </div>
+    },
+    {
+        id: 14,
+        name: '404 Advanced Data Visualization',
+        description: <div>
+            <p className="course-descr-title">STA 404. Advanced Data Visualization. (3)</p>
+            <p className="course-descr-body">Communicating clearly, efficiently, and in a visually compelling manner using data displays. Identifying appropriate displays based on various data characteristics/complexity, audiences, and goals. Using software to produce data displays. Integrating narratives and data displays. Critiquing visualizations based on design principles, statistical characteristics, and narrative quality.</p>
+        </div>
+    },
+    {
+        id: 15,
+        name: '427 Introduction to Bayesian Statistics',
+        description: <div>
+            <p className="course-descr-title">STA 427. Introduction to Bayesian Statistics. (3)</p>
+            <p className="course-descr-body">Introduces the Bayesian approach to statistical inference for data analysis in a variety of applications. Topics include: comparison of Bayesian and frequentist methods, Bayesian model specification, prior specification, basics of decision theory, Markov Chain Monte Carlo, Bayes factor, empirical Bayes, hierarchical models, and use of computational software.</p>
+        </div>
+    },
+    {
+        id: 16,
+        name: '374 Algorithms I',
+        description: <div>
+            <p className="course-descr-title">CSE 374. Algorithms I. (3)</p>
+            <p className="course-descr-body">Design, analysis and implementation of algorithms and data structures. Dynamic programming, brute force algorithms, divide and conquer algorithms, greedy algorithms, graph algorithms, and red-black trees. Other topics include: string matching and computational geometry.</p>
+        </div>
+    },
+    {
+        id: 17,
+        name: '433 Applied Linear Algebra',
+        description: <div>
+            <p className="course-descr-title">MTH 433. Applied Linear Algebra. (3)</p>
+            <p className="course-descr-body">Description not available.</p>
+        </div>
+    },
+    {
+        id: 18,
+        name: '333 Nonparametric Statistics',
+        description: <div>
+            <p className="course-descr-title">STA 333. Nonparametric Statistics. (3)</p>
+            <p className="course-descr-body">Applied study of statistical techniques useful in estimating parameters of a population whose underlying distribution is unknown. Chi-square, runs, and association tests covered. </p>
+        </div>
     }
 ]
 

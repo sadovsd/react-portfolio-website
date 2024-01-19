@@ -1,23 +1,38 @@
-import React, { useState } from 'react';
-import { GithubIcon, ArrowRightIcon } from '../../icons';
-import jeromePowell from '../../assets/jeromePowell.webp';
-import IconsWithText from './IconsWithText';
-import { AiFillCalendar, AiOutlineTag } from 'react-icons/ai';
-import PROJECTS from './../../data/projects';
-import CodeBlock from '../CodeBlock';
+import React from "react";
+// import { ArrowRightIcon } from "../../icons";
+// import jeromePowell from "../../assets/jeromePowell.webp";
+import IconsWithText from "./IconsWithText";
+import PROJECTS from "./../../data/projects";
+// import CodeBlock from "../CodeBlock";
+import { FaCode } from "react-icons/fa6";
+import { MdMonitor } from "react-icons/md";
+import { Link } from 'react-router-dom';
+// import ReactPlayer from "react-player";
 
 const Project3 = () => {
   const projectWithId3 = PROJECTS.find((project) => project.id === 3);
-  const [isUseViewerHovered, setIsUseViewerHovered] = useState(false);
+  // const [isUseViewerHovered, setIsUseViewerHovered] = useState(false);
   if (!projectWithId3) {
-    return <div>No se encontró el proyecto</div>;
+    return <div>project not found</div>;
   }
 
   const { technologies, date } = projectWithId3;
   return (
     <div className="container mt-20 w-[70rem] text-left">
+      <div className="flex items-start">
+        <div className="mt-4 flex flex-wrap ml-2">
+          {technologies.map((technology, index) => (
+            <span
+              key={index}
+              className="bg-gray-200 not-italic rounded-full px-4 py-2 text-xl font-normal text-gray-800 mr-2 mb-2 sm:mr-2"
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
+      </div>
       <h3 className="leading-tight text-[4rem] font-black">
-        A From-Scratch, Full Stack CPI Data Viewer
+        SAS CPI Data Viewer
       </h3>
       <h3
         // leading-none, leading-tight, leading-snug, leading-normal, leading-relaxed, and leading-loose.
@@ -35,34 +50,43 @@ const Project3 = () => {
       >
         {/* Using SAS on demand to store and manipulate historical government consumer price index data, React to build a user application, and a Flask API to process user requests */}
         How I Built a Full Stack Data Analysis Application for Government
-        Consumer Price Index Data
+        Consumer Price Index Data, all Powered by SAS
       </h3>
       <hr className="mt-8"></hr>
 
-      <div className="flex items-start">
+      <div className="flex items-start justify-between">
         <IconsWithText
-          leftIcon={<AiFillCalendar />}
+          // leftIcon={<AiFillCalendar />}
           leftText={date}
-          rightIcon={<GithubIcon />}
-          rightText="sadovsd"
+          // rightIcon={<GithubIcon />}
+          // rightText="sadovsd"
           className="mt-4 "
         />
-        <div className="flex items-center ml-3">
-          <AiOutlineTag className="mt-4 text-2xl md:text-3xl " />
-        </div>
-        <div className="mt-4 flex flex-wrap ml-2">
-          {technologies.map((technology, index) => (
-            <span
-              key={index}
-              className="bg-gray-200 not-italic rounded-full px-3 py-1 text-base  font-normal text-gray-800 mr-2 mb-2 sm:mr-2"
-            >
-              {technology}
+        <div className="mt-2 flex flex-wrap">
+          <a className="pr-[30px]" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/react-portfolio-website/tree/main/src/components/projectApplications/flaskSASCpiViewer">
+            <FaCode className="inline mr-2 text-3xl"/>
+            <span className="ml-1 leading-none whitespace-nowrap font-medium">
+              View Frontend Code
             </span>
-          ))}
+          </a>
+
+          <a className="pr-[30px]" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/sas-cpi-viewer-backend">
+            <FaCode className="inline mr-2 text-3xl"/>
+            <span className="ml-1 leading-none whitespace-nowrap font-medium">
+              View Backend Code
+            </span>
+          </a>
+
+          <Link to="/applications/flaskSASCpiViewer">
+            <MdMonitor className="inline mr-2 text-3xl"/>
+            <span className="ml-1 leading-none whitespace-nowrap font-medium">
+              Use App
+            </span>
+          </Link>
         </div>
       </div>
 
-      <div
+      {/* <div
         className="flex items-end gap-4 mt-10 cursor-pointer"
         onMouseEnter={() => setIsUseViewerHovered(true)}
         onMouseLeave={() => setIsUseViewerHovered(false)}
@@ -70,19 +94,36 @@ const Project3 = () => {
         <h3>Use Viewer</h3>
         <ArrowRightIcon
           className={`${
-            isUseViewerHovered ? 'translate-x-4' : ''
+            isUseViewerHovered ? "translate-x-4" : ""
           } transition-all cursor-pointer`}
         />
-      </div>
+      </div> */}
 
-      <hr className="my-8"></hr>
-      <img
+      <hr className="my-2"></hr>
+
+      {/* <ReactPlayer
+                    className='mt-20 '
+                    url="https://vimeo.com/586971565"
+                    controls='true'
+      /> */}
+
+            <div className="relative pt-[56.25%] mt-20 mb-40">
+                <iframe 
+                    src="https://player.vimeo.com/video/904323169?badge=0&autopause=0&player_id=0&app_id=58479" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    className="absolute top-0 left-0 w-full h-full" 
+                    title="portfolioVideo"
+                ></iframe>
+            </div>
+
+
+      {/* <img
         src={jeromePowell}
         alt="Jerome Powell"
         // className='h-[400px] p-16'
       />
-      <p className="mt-4 text-center">Jerome Powell thinks its ok</p>
-      <p className="text-[1.9rem] leading-relaxed mt-12">
+      <p className="mt-4 text-center">Jerome Powell thinks its ok</p> */}
+      {/* <p className="text-[1.9rem] leading-relaxed mt-12">
         Data was acquired from U.S bureau of labor statistics
         https://www.bls.gov/cpi/data.htm. The complete file structure used can
         be easily examined here: https://download.bls.gov/pub/time.series/cu/.
@@ -118,7 +159,7 @@ const Project3 = () => {
 const greet = () => {console.log('Hello, World!');};`}
         language="javascript"
         className="mt-7"
-      />
+      /> */}
     </div>
   );
 };
