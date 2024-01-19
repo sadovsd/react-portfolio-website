@@ -213,7 +213,9 @@ function Project3App() {
     event.preventDefault();
     setCheckYearsError(false); // ?????? Reset error state at the start
     setIsLoading1(true);
-    const url = new URL(process.env.REACT_APP_SAS_FLASK_ROUTE_ONE); // azure jawn
+    // const url = new URL(process.env.REACT_APP_SAS_FLASK_ROUTE_ONE); // azure jawn
+    const url = new URL("https://sas-flask-cpi-viewer.ashyisland-99d2d5a8.eastus.azurecontainerapps.io/getAvailableSeries"); // azure jawn
+
     // const url = new URL('http://localhost:8000/getAvailableSeries'); // docker jawn
     // const url = new URL('http://127.0.0.1:5000/getAvailableSeries'); // local jawn
 
@@ -329,7 +331,9 @@ function Project3App() {
     }
     // console.log('handleSubmit- we made it past error returns!');
     setIsLoading(true);
-    const url = new URL(process.env.REACT_APP_SAS_FLASK_ROUTE_TWO); // azure deployed jawn
+    // const url = new URL(process.env.REACT_APP_SAS_FLASK_ROUTE_TWO); // azure deployed jawn
+    const url = new URL("https://sas-flask-cpi-viewer.ashyisland-99d2d5a8.eastus.azurecontainerapps.io/makeGraphReadyData"); // azure deployed jawn
+
     // const url = new URL('http://localhost:8000/makeGraphReadyData'); // docker jawn
     // const url = new URL('http://127.0.0.1:5000/makeGraphReadyData'); // local jawn
 
