@@ -528,8 +528,8 @@ function Project3App() {
                             !isItemCodeInSeriesInfo(form[index].itemCode)
                               ? "cursor-not-allowed"
                               : ""
-                          } 2xl:w-[250px] md:w-[200px] ${
-                            form.length <= 1 ? "sm:w-[250px]" : "w-[202px]"
+                          } sm:w-[250px] ${
+                            form.length <= 1 ? "xs:w-[250px]" : "w-[202px]"
                           } border-[#add8e6] rounded-md`}
                         >
                           <SingleDropdown

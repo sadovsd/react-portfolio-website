@@ -96,7 +96,7 @@ const Header = ({ children }) => {
       <div className="flex justify-between shadow-lg ssm:pr-4 ssm:pl-8 sm:px-16 py-10 items-center">
         <div  className="">
           <div className="flex items-center">
-            <Link to="/" className="ml-28 font-semibold whitespace-nowrap hover:opacity-70" onClick={() => handleLinkClick('/')}>
+            <Link to="/" className="font-semibold whitespace-nowrap hover:opacity-70" onClick={() => handleLinkClick('/')}>
               <img className="w-[30px] h-[30px] rounded-full" src="./images/logo512.png" alt="App logo"/>
             </Link>
             <span className="text-[25px] font-medium ml-[4px] opacity-30">/</span>
@@ -106,8 +106,8 @@ const Header = ({ children }) => {
           </div>
         </div>
 
-        <div className="mr-32 space-x-4 xs:hidden flex gap-4 sm:gap-8">
-          <h2 className="!font-extrabold text-xl">
+        <div className="space-x-4 xs:hidden flex gap-4 sm:gap-8">
+        <h2 className="!font-extrabold text-xl">
             <Link
               to="/"
               className={`hover:no-underline [font-size:_clamp(12.5px,3vw,21px)] font-normal header-link ${

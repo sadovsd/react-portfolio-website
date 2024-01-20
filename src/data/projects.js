@@ -57,7 +57,7 @@ const PROJECTS = [
         id: 5,
         title: 'Calibrated Power Prior Optimization',
         date: 'January 2023',
-        description: "The power prior is a ",
+        description: "Coming Soon...",
         tags: 'Bayesian / Simulation',
         technologies: ['R', 'RStan'],
         image: project5,

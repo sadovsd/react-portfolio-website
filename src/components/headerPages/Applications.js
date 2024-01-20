@@ -21,7 +21,7 @@ const Applications = () => {
                 <a target="_blank" rel="noreferrer" href="https://davydsadovskyy.shinyapps.io/llm-papers-2023-dashboard/">
                     <div className="mt-10">
                         <h2 className='hover:underline'>Research Paper Visualizer</h2>
-                        <p className="mt-4 text-[16px]">Interactive ashboard that visualizes the semantic location of almost 15k reseach papers published about LLMs in the past year and allows a user to filter based on date or paper influence. In addition, there are two other interactive visualizations that help a user further understand the research landscape.
+                        <p className="mt-4 text-[16px]">Interactive dashboard that visualizes the semantic location of almost 15k reseach papers published about LLMs in the past year and allows a user to filter based on date or paper influence. In addition, there are two other interactive visualizations that help a user further understand the research landscape.
                         </p>
                     </div>
                 </a>

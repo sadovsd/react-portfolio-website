@@ -133,7 +133,7 @@ const NewResume = () => {
     <div className="container max-w-6xl mt-[7rem] mb-20 sm:px-10 xs:px-10 2xl:px-2">
       <div className="mb-[20px] text-right">
       {/* eslint-disable-next-line */}
-        <a href={"./files/sample-resume.pdf"} download="resumeFile" target="_blank">
+        <a href={"./files/davyd_resume.pdf"} download="resumeFile" target="_blank">
           <button className="w-[16rem] py-2 px-4 font-semibold text-blue-500 border-[1.5px] border-blue-500 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none">
             Download Resume
           </button>

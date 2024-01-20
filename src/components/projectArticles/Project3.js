@@ -62,22 +62,22 @@ const Project3 = () => {
           // rightText="sadovsd"
           className="mt-4 "
         />
-        <div className="mt-2 flex flex-wrap">
-          <a className="pr-[30px]" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/react-portfolio-website/tree/main/src/components/projectApplications/flaskSASCpiViewer">
+        <div className="mt-2 flex flex-wrap xs:w-[175px]">
+          <a className="xs:pr-[10px] pr-[30px]" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/react-portfolio-website/tree/main/src/components/projectApplications/flaskSASCpiViewer">
             <FaCode className="inline mr-2 text-3xl"/>
             <span className="ml-1 leading-none whitespace-nowrap font-medium">
               View Frontend Code
             </span>
           </a>
 
-          <a className="pr-[30px]" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/sas-cpi-viewer-backend">
+          <a className="xs:pr-[10px] pr-[30px]" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/sas-cpi-viewer-backend">
             <FaCode className="inline mr-2 text-3xl"/>
             <span className="ml-1 leading-none whitespace-nowrap font-medium">
               View Backend Code
             </span>
           </a>
 
-          <Link to="/applications/flaskSASCpiViewer">
+          <Link to="/applications/flaskSASCpiViewer" className="xs:pr-[10px] ">
             <MdMonitor className="inline mr-2 text-3xl"/>
             <span className="ml-1 leading-none whitespace-nowrap font-medium">
               Use App
