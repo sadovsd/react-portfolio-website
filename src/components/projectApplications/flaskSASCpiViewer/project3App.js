@@ -431,6 +431,9 @@ function Project3App() {
           <div className="mb-16 text-[1.9rem] leading-relaxed">
             <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
               <li>
+                Since SASpy is not meant for production builds, the SAS sessions sometimes fail to connect, leading to retries and up to a ~12 second response time. The normal response time is ~4 seconds, though.
+              </li>
+              <li>
                 The data is seasonally unadjusted and is the U.S average.
               </li>
               <li>

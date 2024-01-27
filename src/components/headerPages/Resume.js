@@ -200,7 +200,7 @@ const NewResume = () => {
         </p> */}
 
         <Collapsable
-          subtitle="Relevant Courses in Progress (Fall 2023):"
+          subtitle="Relevant Courses in Progress (Spring 2024):"
           dataArray={IN_PROGRESS_COURSES}
         />
       </div>
