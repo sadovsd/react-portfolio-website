@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 // import CloseIcon from '@mui/icons-material/Close';
 import { ExitIcon } from "../../icons";
-import COMPLETED_COURSES from "../../data/coursesCompleted";
-import IN_PROGRESS_COURSES from "../../data/coursesInProgress";
+// import COMPLETED_COURSES from "../../data/coursesCompleted";
+// import IN_PROGRESS_COURSES from "../../data/coursesInProgress";
+import STA_MTH_COURSES from "../../data/STAandMTHcourses";
+import CSE_DATASCIENCE_COURSES from "../../data/CSEandDScourses";
 import CSU_COURSES from "../../data/coursesCsu";
 import sasCert from "../../assets/sas_cert.png";
 
@@ -190,8 +192,8 @@ const NewResume = () => {
               <p className="list-item mt-3 text-left">Honors College</p>
             </>
           }
-          subtitle="Relevant Courses Completed:"
-          dataArray={COMPLETED_COURSES}
+          subtitle="Math and Statistics Courses:"
+          dataArray={STA_MTH_COURSES}
         />
 
         {/* <p className="list-item mt-3 text-left">
@@ -200,8 +202,8 @@ const NewResume = () => {
         </p> */}
 
         <Collapsable
-          subtitle="Relevant Courses in Progress (Spring 2024):"
-          dataArray={IN_PROGRESS_COURSES}
+          subtitle="CS, Data Science, and Bioinformatics Courses:"
+          dataArray={CSE_DATASCIENCE_COURSES}
         />
       </div>
       <div>

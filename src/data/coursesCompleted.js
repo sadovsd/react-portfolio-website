@@ -6,6 +6,9 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">STA 463. Regression Analysis. (4)</p>
             <p className="course-descr-body">Linear regression model, theory of least squares, statistical inference procedures, general linear hypothesis, partial F tests, residual analysis, regression diagnostics, comparison of several regressions, model adequacy, and use of statistical computer packages.</p>
+            {/* <p className="mt-4 course-descr-body">Book Used: Applied Linear Statistical Models 5th editiion - KNNL</p> */}
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Applied Linear Statistical Models (5th edition) - KNNL</p>
+
         </div>
     },
     {
@@ -14,6 +17,7 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">STA 462. Inferential Statistics. (3)</p>
             <p className="course-descr-body">A study of estimation and hypothesis testing including a development of related probability ideas. Topics include derivation of the distribution of functions of random variables, point estimation methods, properties of point estimators, derivation of confidence interval formulas, and derivation of test statistics and critical regions for testing hypotheses.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Mathematical Statistics with Applications (7th Edition) - Wackerly, Mendenhall, Scheaffer</p>
         </div>
     },
     {
@@ -22,6 +26,7 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">STA 401. Probability. (3)</p>
             <p className="course-descr-body">Development of probability theory with emphasis on how probability relates to statistical inference. Topics include review of probability basics, counting rules, Bayes Theorem, distribution function, expectation and variance of random variables and functions of random variables, moment generating function, moments, probability models for special random variables, joint distributions, maximum likelihood estimation, unbiasedness, distributions of functions of random variables, chi-square distribution, students t distribution, F distribution, and sampling distributions of the sample mean and variance.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Mathematical Statistics with Applications (7th Edition) - Wackerly, Mendenhall, Scheaffer</p>
         </div>
     },
     {
@@ -30,6 +35,8 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">STA 402. Statistical Programming. (3)</p>
             <p className="course-descr-body">Introduction to the use of computers to process and analyze data. Techniques and strategies for managing, manipulating, and analyzing data are discussed. Emphasis is on the use of the SAS system. Statistical computing topics, such as random number generation, randomization tests, and Monte Carlo simulation, will be used to illustrate these programming ideas.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Statistical Programming in SAS (2nd edition) - A.J. Bailer</p>
+
         </div>
     },
     {
@@ -38,6 +45,8 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">MTH 252. Calculus III. (4)</p>
             <p className="course-descr-body">Continuation of Calculus I and II. Three-dimensional analytic geometry, vectors, derivatives, multiple integrals, applications. The honors course offers an in-depth treatment of these topics. Admission to the honors course requires honors standing or permission of the instructor.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Calculus (8th edition) - Stewart</p>
+
         </div>
     },
     {
@@ -46,6 +55,7 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">MTH 222. Introduction to Linear Algebra. (3)</p>
             <p className="course-descr-body">Treatment with emphasis on Euclidean spaces and matrix algebra: systems of linear equations, elementary matrix operations, determinants, vector methods in geometry, vector spaces, and linear transformations.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Professor's Notes</p>
         </div>
     },
     {
@@ -102,6 +112,8 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">MTH 231. Elements of Discrete Mathematics. (3)</p>
             <p className="course-descr-body">Service course. Topics, techniques and terminology in discrete mathematics: logic, sets, proof by mathematical induction, relations, counting.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Discrete Mathematics with Applications (5th edition) - Susanna S. Epp</p>
+
         </div>
     },
     {
@@ -118,6 +130,8 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">STA 427. Introduction to Bayesian Statistics. (3)</p>
             <p className="course-descr-body">Introduces the Bayesian approach to statistical inference for data analysis in a variety of applications. Topics include: comparison of Bayesian and frequentist methods, Bayesian model specification, prior specification, basics of decision theory, Markov Chain Monte Carlo, Bayes factor, empirical Bayes, hierarchical models, and use of computational software.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Bayesian Data Analysis (3rd edition) - Gelman, Carlin, Stern, Dunson, Vehtari and Rubin</p>
+
         </div>
     },
     {
@@ -134,6 +148,7 @@ const COMPLETED_COURSES = [
         description: <div>
             <p className="course-descr-title">MTH 433. Applied Linear Algebra. (3)</p>
             <p className="course-descr-body">Description not available.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Applied Linear Algebra (2nd edition) - Olver and Shakiban</p>
         </div>
     },
     {
