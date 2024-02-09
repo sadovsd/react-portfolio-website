@@ -13,6 +13,7 @@ const CSU_COURSES = [
         description: <div>
             <p className="course-descr-title">MTH 431. CATEGORICAL DATA ANALYSIS. (3)</p>
             <p className="course-descr-body">The course will cover techniques of modeling data for data that are categorical rather than continuous in nature. Topics to be covered include joint, marginal, and conditional probabilities, relative risk, odds ratios, generalized linear models, logistic regression, multi-category logit models, and log linear models. The course will utilize data examples from the fields of biology, medicine, health, epidemiology, environmental science, and psychology. The course will use a statistical programming language. </p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Categorical Data Analysis (2nd Edition) - Agresti</p>
         </div>
     },
     {
@@ -21,6 +22,7 @@ const CSU_COURSES = [
         description: <div>
             <p className="course-descr-title">MTH 467. Applied Regression Models. (3)</p>
             <p className="course-descr-body">An applied data analysis course focused on regression. A review of simple linear regression will progress into using more than one predictor variable to predict another. Topics will include model checking, variable selection methods, dummy variables, and diagnostic measures. Instruction will include the use of a statistical programming language.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Regression Analysis by Example (5th Edition) - Chatterjee, Hadi</p>
         </div>
     },
     {

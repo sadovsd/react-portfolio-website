@@ -58,7 +58,7 @@ const STA_MTH_COURSES = [
         name: '433 Applied Linear Algebra',
         description: <div>
             <p className="course-descr-title">MTH 433. Applied Linear Algebra. (3)</p>
-            <p className="course-descr-body">Description not available.</p>
+            <p className="course-descr-body">This course revisits the fundamentals of linear algebra with a focus on practical applications and computational methods. Starting with a review of solving linear equations and matrix operations, it progresses to explore LU and LDV factorizations, subspaces, and vector spaces. Key applications include data fitting and least squares, image compression, and statistical data analysis through singular value decomposition (SVD), and the exploration of Markov chains for ranking systems like Google's PageRank. The course integrates computational exercises using Python within Jupyter notebooks, covering packages such as numpy and pandas, to apply linear algebra concepts to real-world problems.</p>
             <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Applied Linear Algebra (2nd edition) - Olver and Shakiban</p>
         </div>
     },
@@ -68,6 +68,7 @@ const STA_MTH_COURSES = [
         description: <div>
             <p className="course-descr-title">STA 333. Nonparametric Statistics. (3)</p>
             <p className="course-descr-body">Applied study of statistical techniques useful in estimating parameters of a population whose underlying distribution is unknown. Chi-square, runs, and association tests covered. </p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Prefessor's Notes</p>
         </div>
     },
     {
@@ -85,6 +86,7 @@ const STA_MTH_COURSES = [
         description: <div>
             <p className="course-descr-title">STA 432. Survey Sampling in Business. (3)</p>
             <p className="course-descr-body">Survey sampling with applications to problems of business research. Simple random sampling, systematic sampling, stratified random sampling, ratio estimation, and cluster sampling. </p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> Sampling: Design and Analysis (3rd edition) - Lohr</p>
         </div>
     }
 ];
