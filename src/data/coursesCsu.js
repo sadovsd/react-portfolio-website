@@ -5,6 +5,8 @@ const CSU_COURSES = [
         description: <div>
             <p className="course-descr-title">MTH 347. Applied Statistics. (3)</p>
             <p className="course-descr-body">Topics include simple linear regression, analysis of variance, nonparametric statistics, multiple and logistic regression, statistical process control, and basic time series analysis. This course will emphasize the applied nature of statistical analysis and require using a statistical analysis software package.</p>
+            <p className="mt-4 course-descr-body"><strong>Book Used:</strong> The Art and Science of Learning to Make Informed Decisions from Data - Custom Edition for Cleveland State University.<em> Taken From: </em>Statistics: The Art and Science of Learning from Data (4th Edition) - Agresti, Franklin, Klingenberg. + Statistics: Informed Decisions Using Data (5th Edition) - Sullivan III</p>
+
         </div>
     },
     {

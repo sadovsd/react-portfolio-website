@@ -132,10 +132,15 @@ const Collapsable = ({ titles, subtitle, dataArray }) => {
 
 const NewResume = () => {
   return (
-    <div className="container max-w-6xl mt-[7rem] mb-20 sm:px-10 xs:px-10 2xl:px-2">
+    <div className="container max-w-6xl mt-[5rem] mb-20 sm:px-10 xs:px-10 2xl:px-2">
       <div className="mb-[20px] text-right">
       {/* eslint-disable-next-line */}
-        <a href={"./files/davyd_resume.pdf"} download="resumeFile" target="_blank">
+        <a href={"./files/course_list.pdf"} download="courseListFile" target="_blank" rel="noopener noreferrer">
+          <button className="w-[18rem] mr-4 py-2 px-4 font-semibold text-blue-500 border-[1.5px] border-blue-500 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none">
+            Download Course List
+          </button>
+        </a>
+        <a href={"./files/davyd_resume.pdf"} download="resumeFile" target="_blank" rel="noopener noreferrer">
           <button className="w-[16rem] py-2 px-4 font-semibold text-blue-500 border-[1.5px] border-blue-500 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none">
             Download Resume
           </button>
