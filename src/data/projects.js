@@ -4,7 +4,7 @@ import project1 from '../assets/lens_regen.png';
 import project2 from '../assets/midjourney.png';
 import project3 from '../assets/cpi_viewer.png';
 import project4 from '../assets/LLMTracker.gif';
-import project6 from '../assets/cpp3.png';
+import project5 from '../assets/cpp3.png';
 
 
 // the convention for global variables is uppercase
@@ -55,17 +55,6 @@ const PROJECTS = [
     },
     {
         id: 5,
-        title: 'OHLC Ethereum Returns Forcasting',
-        date: 'January 2023',
-        description: "Using 10 years of raw Ethereum open, high, low, close (OHLC) data, I generated several hundred predictor variables to use in a model that predicts a certain percent return for the next day. I selected variables using a LASSO sliding window approach, and then fit a a handful of statistical learning models and selected the one with the best out of sample precision score.",
-        tags: 'Feature Engineering / MLOps',
-        technologies: ['LASSO', 'Random Forest', 'Boosting', 'Neural Network', 'SVM', 'Hopsworks Feature Store', 'GitHub Actions'],
-        image: project5,
-        hasApp: false,
-        appPath: ''
-    },
-    {
-        id: 6,
         title: 'Calibrated Power Prior Optimization',
         date: 'January 2023',
         description: "Coming Soon...",
@@ -75,6 +64,17 @@ const PROJECTS = [
         hasApp: false,
         appPath: ''
     }
+    // {
+    //     id: 5,
+    //     title: 'OHLC Ethereum Returns Forcasting',
+    //     date: 'January 2023',
+    //     description: "Using 10 years of raw Ethereum open, high, low, close (OHLC) data, I generated several hundred predictor variables to use in a model that predicts a certain percent return for the next day. I selected variables using a LASSO sliding window approach, and then fit a a handful of statistical learning models and selected the one with the best out of sample precision score.",
+    //     tags: 'Feature Engineering / MLOps',
+    //     technologies: ['LASSO', 'Random Forest', 'Boosting', 'Neural Network', 'SVM', 'Hopsworks Feature Store', 'GitHub Actions'],
+    //     image: project5,
+    //     hasApp: false,
+    //     appPath: ''
+    // }
 ]; 
 
 export default PROJECTS; // "this shares the projects array with the rest of the code base"
