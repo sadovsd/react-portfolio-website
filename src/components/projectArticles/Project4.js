@@ -4,13 +4,13 @@ import React from "react";
 import IconsWithText from "./IconsWithText";
 import PROJECTS from "./../../data/projects";
 // import CodeBlock from "../CodeBlock";
-import { FaCode } from "react-icons/fa6";
-import { MdMonitor } from "react-icons/md";
-import { LuBookOpen } from "react-icons/lu";
+// import { FaCode } from "react-icons/fa6";
+// import { MdMonitor } from "react-icons/md";
+// import { LuBookOpen } from "react-icons/lu";
 import { RiPresentationFill } from "react-icons/ri";
 
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import ReactPlayer from "react-player";
 
 const Project4 = () => {

@@ -268,7 +268,7 @@ import midjourney from "../../assets/midjourney.png";
 import { motion } from "framer-motion";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { RiReactjsFill } from "react-icons/ri";
-import { GithubIcon, LinkedinIcon, MediumIcon } from "../../icons";
+// import { GithubIcon, LinkedinIcon, MediumIcon } from "../../icons";
 
 const TechUsed = ({ tech }) => (
   <div>

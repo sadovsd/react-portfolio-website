@@ -69,7 +69,6 @@ import {
   GithubIcon,
   LinkedinIcon,
   MediumIcon,
-  YoutubeIcon,
   EmailIcon
 } from './icons';
 

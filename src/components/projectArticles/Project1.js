@@ -3,7 +3,7 @@ import PROJECTS from "./../../data/projects";
 import { FaCode } from "react-icons/fa6";
 import { MdMonitor } from "react-icons/md";
 import { LuBookOpen } from "react-icons/lu";
-import { MdOutlineArticle } from "react-icons/md";
+// import { MdOutlineArticle } from "react-icons/md";
 // import ReactPlayer from "react-player";
 
 const Project1 = () => {
