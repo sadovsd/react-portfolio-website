@@ -149,7 +149,7 @@ const NewResume = () => {
             Download Resume
           </button>
         </a> */}
-        <a href={"./files/course_list.pdf"} download="courseListFile" target="_blank" rel="noopener noreferrer">
+        <a href={"./files/course_list_march_2025.pdf"} download="davyd_course_list" target="_blank" rel="noopener noreferrer">
           <button 
             // className="xxs:w-[180px] mb-4 w-[18rem] mr-4 py-2 px-4 font-semibold text-black border-[1.5px] border-black rounded-md hover:bg-black hover:text-white focus:outline-none"
             className="cursor-pointer px-4 py-2 mr-6 bg-gray-200 text-gray-700 font-semibold rounded-lg shadow hover:bg-gray-300 hover:text-gray-800"
@@ -157,7 +157,7 @@ const NewResume = () => {
             Download Course List
           </button>
         </a>
-        <a href={"./files/davyd_resume.pdf"} download="resumeFile" target="_blank" rel="noopener noreferrer">
+        <a href={"./files/resume_davyd_march_2025.pdf"} download="davyd_resume_march_2025" target="_blank" rel="noopener noreferrer">
           <button 
             // className="xxs:w-[180px] w-[16rem] mr-4 py-2 px-4 font-semibold text-black border-[1.5px] border-black rounded-md hover:bg-black hover:text-white focus:outline-none"
             className="cursor-pointer px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded-lg shadow hover:bg-gray-300 hover:text-gray-800"
@@ -381,7 +381,7 @@ const NewResume = () => {
               <span 
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/davyd-sadovskyy-84678a105/details/projects/1658066381/multiple-media-viewer/?profileId=ACoAABqiNDYB9ZdHNjeZKM_Fj0ZjfHOwYHlPx2c&treasuryMediaId=1725163382596&type=DOCUMENT",
+                    "https://ryansingh.notion.site/Datafest-2024-Data-Holic-RedHawks-d277c5d2f75442b4a9228a16671b2226",
                     "_blank"
                   )
                 }

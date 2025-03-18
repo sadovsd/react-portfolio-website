@@ -10,6 +10,7 @@ const Project = props => {
     const { id, title, date, tags, image, description, technologies, hasApp, appPath } = props.project;
     return (
         <div className='flex flex-wrap flex-col items-center gap-9 rounded-2xl overflow-hidden shadow-md transition-all duration-100 transform-gpu hover:-translate-y-2 hover:shadow-lg w-full'>
+    
             {/* <img className="h-[22rem] mt-4 object-cover"  style={id === 5 ? { transform: 'scale(1.32)', marginTop: '30px', marginLeft: '35px' } : {}}  src={image} alt='project'/> */}
             <img 
                 className="h-[22rem] mt-4 object-cover"  
@@ -81,8 +82,10 @@ const Project = props => {
 const Project4 = () =>  (
     <div className='xs:mx-20 mt-20 mb-20'>
         <h1 className=''>Highlighted Projects</h1>
-        {/* <h3 className='mt-10'>Some <span className='text-green-600'>data science</span> and <span className='text-green-600'>software development</span> projects I've been working on.</h3> */}
-        <div className='mt-40 sm:mx-[7rem] items-start place-items-center grid grid-cols-auto md:grid-cols-1fr sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-20'>
+        <h3 className='mt-10 text-neutral-500'>Some data science, bioinformatics and software development projects</h3>
+        <div className='mt-36 sm:mx-[7rem] items-start place-items-center grid grid-cols-auto md:grid-cols-1fr sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12'>
+        {/* <div className='mt-36 sm:mx-[7rem] items-start place-items-center grid grid-cols-1 sm:grid-cols-2 gap-20'> */}
+
             {PROJECTS.map((project, id) => (
                 <Project 
                     key={id} 
