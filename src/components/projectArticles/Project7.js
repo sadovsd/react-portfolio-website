@@ -6,15 +6,11 @@ import PROJECTS from "./../../data/projects";
 // import CodeBlock from "../CodeBlock";
 import { FaCode } from "react-icons/fa6";
 import { MdMonitor } from "react-icons/md";
-import { LuBookOpen } from "react-icons/lu";
-import { RiPresentationFill } from "react-icons/ri";
-
-
 import { Link } from 'react-router-dom';
 // import ReactPlayer from "react-player";
 
-const Project3 = () => {
-  const projectWithId3 = PROJECTS.find((project) => project.id === 3);
+const Project7 = () => {
+  const projectWithId3 = PROJECTS.find((project) => project.id === 7);
   // const [isUseViewerHovered, setIsUseViewerHovered] = useState(false);
   if (!projectWithId3) {
     return <div>project not found</div>;
@@ -36,7 +32,8 @@ const Project3 = () => {
         </div>
       </div>
       <h3 className="leading-tight text-[4rem] font-black">
-      Using a Genome Wide Association Study (GWAS) to Find Genetic Determinants of Aging Gaps      </h3>
+        SAS CPI Data Viewer
+      </h3>
       <h3
         // leading-none, leading-tight, leading-snug, leading-normal, leading-relaxed, and leading-loose.
 
@@ -52,7 +49,8 @@ const Project3 = () => {
         className="text-neutral-500 text-[1.9rem] font-normal mt-8 leading-relaxed"
       >
         {/* Using SAS on demand to store and manipulate historical government consumer price index data, React to build a user application, and a Flask API to process user requests */}
-        CU Anschutz Rotation #2 with Joanne Cole
+        How I Built a Full Stack Data Analysis Application for Government
+        Consumer Price Index Data, all Powered by SAS
       </h3>
       <hr className="mt-8"></hr>
 
@@ -65,13 +63,26 @@ const Project3 = () => {
           className="mt-4 "
         />
         <div className="mt-2 flex flex-wrap xs:w-[175px]">
-
-          <a className="xs:pr-[10px] pr-[0px] hover:opacity-70" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/transcriptomics_aging_clock_CORN/blob/main/rotation2_presentation_davyd.pdf">
-            <RiPresentationFill className="inline mr-2 text-3xl"/>
+          <a className="xs:pr-[10px] pr-[20px] hover:opacity-70" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/react-portfolio-website/tree/main/src/components/projectApplications/flaskSASCpiViewer">
+            <FaCode className="inline mr-2 text-3xl"/>
             <span className="ml-0 leading-none whitespace-nowrap font-medium">
-              Presentation Slides
+              Frontend Code
             </span>
           </a>
+
+          <a className="xs:pr-[10px] pr-[20px] hover:opacity-70" target="_blank" rel="noreferrer" href="https://github.com/sadovsd/sas-cpi-viewer-backend">
+            <FaCode className="inline mr-2 text-3xl"/>
+            <span className="ml-0 leading-none whitespace-nowrap font-medium">
+              Backend Code
+            </span>
+          </a>
+
+          <Link to="/applications/flaskSASCpiViewer" className="xs:pr-[10px] hover:opacity-70">
+            <MdMonitor className="inline mr-2 text-3xl"/>
+            <span className="ml-0 leading-none whitespace-nowrap font-medium">
+              Use App
+            </span>
+          </Link>
         </div>
       </div>
 
@@ -153,4 +164,4 @@ const greet = () => {console.log('Hello, World!');};`}
   );
 };
 
-export default Project3;
+export default Project7;

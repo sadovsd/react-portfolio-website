@@ -39,7 +39,7 @@ const Header = ({ children }) => {
           }`}
         >
           <ul className="pt-20">
-          <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 border-[#3b82f6] ${activeLink === "/" ? "border-l-8" : ""}`}>
+          <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 ${activeLink === "/" ? "border-l-8" : ""}`}>
               <Link
                 to="/"
                 className={`hover:no-underline [font-size:_clamp(12.5px,3vw,23px)] font-normal ${
@@ -50,7 +50,9 @@ const Header = ({ children }) => {
                 Home
               </Link>
             </li>
-            <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 border-[#3b82f6] ${activeLink.startsWith("/resume") ? "border-l-8" : ""}`}>
+            {/* <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 border-[#3b82f6] ${activeLink.startsWith("/resume") ? "border-l-8" : ""}`}> */}
+            <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 ${activeLink.startsWith("/resume") ? "border-l-8" : ""}`}>
+
               <Link
                 to="/resume"
                 className={`hover:no-underline [font-size:_clamp(12.5px,3vw,23px)] font-normal ${
@@ -61,7 +63,7 @@ const Header = ({ children }) => {
                 Resume
               </Link>
             </li>
-            <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 border-[#3b82f6] ${activeLink.startsWith("/projects") ? "border-l-8" : ""}`}>
+            <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 ${activeLink.startsWith("/projects") ? "border-l-8" : ""}`}>
               <Link
                 to="/projects"
                 className={`hover:no-underline [font-size:_clamp(12.5px,3vw,23px)] font-normal ${
@@ -72,7 +74,7 @@ const Header = ({ children }) => {
                 Projects
               </Link>
             </li>
-            <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 border-[#3b82f6] ${activeLink.startsWith("/applications") ? "border-l-8" : ""}`}>
+            {/* <li className={`py-2 px-4 hover:bg-gray-200 hover:border-l-8 border-[#3b82f6] ${activeLink.startsWith("/applications") ? "border-l-8" : ""}`}>
               <Link
                 to="/applications"
                 className={`hover:no-underline [font-size:_clamp(12.5px,3vw,23px)] font-normal ${
@@ -82,7 +84,7 @@ const Header = ({ children }) => {
               >
                 Applications
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -93,7 +95,9 @@ const Header = ({ children }) => {
           onClick={toggleMenu}
         ></div>
       </div>
-      <div className="flex justify-between shadow-lg ssm:pr-4 ssm:pl-8 sm:px-16 py-10 items-center">
+      {/* <div className="flex justify-between shadow-lg ssm:pr-4 ssm:pl-8 sm:px-16 py-10 items-center"> */}
+      <div className="flex justify-between shadow-lg ssm:px-40 sm:px-48 py-10 items-center">
+
         <div  className="">
           <div className="flex items-center">
             <Link to="/" className="font-semibold whitespace-nowrap hover:opacity-70" onClick={() => handleLinkClick('/')}>
@@ -140,7 +144,7 @@ const Header = ({ children }) => {
               Projects
             </Link>
           </h2>
-          <h2 className="!font-extrabold text-xl">
+          {/* <h2 className="!font-extrabold text-xl">
             <Link
               to="/applications"
               className={`hover:no-underline [font-size:_clamp(12.5px,3vw,21px)] font-normal header-link ${
@@ -150,7 +154,7 @@ const Header = ({ children }) => {
             >
               Applications
             </Link>
-          </h2>
+          </h2> */}
         </div>
       </div>
       {children}

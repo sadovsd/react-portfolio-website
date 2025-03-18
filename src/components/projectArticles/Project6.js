@@ -1,13 +1,10 @@
 import IconsWithText from "./IconsWithText";
 import PROJECTS from "./../../data/projects";
 import { FaCode } from "react-icons/fa6";
-import { MdMonitor } from "react-icons/md";
-import { LuBookOpen } from "react-icons/lu";
-import { MdOutlineArticle } from "react-icons/md";
 // import ReactPlayer from "react-player";
 
-const Project1 = () => {
-  const projectWithId = PROJECTS.find((project) => project.id === 1);
+const Project6 = () => {
+  const projectWithId = PROJECTS.find((project) => project.id === 6);
   const { technologies, date } = projectWithId;
 
   return (
@@ -26,57 +23,31 @@ const Project1 = () => {
       </div>
 
       <h3 className="leading-tight text-[4rem] font-black">
-        Research Paper Visualizer
+        React Portfolio Website
       </h3>
       <h3 className="text-neutral-500 text-[1.9rem] font-normal mt-8 leading-relaxed">
-        How I used Semantic Scholar API to Retrieve Raw Data about Large
-        Langauge Model Publications, BERTopic to Cluster Papers, and an RShiny
-        Dashboard to Interactively Visualize Aspects of the Research Landscape
+        How I Built my First Website Ever With no Prior Experience Using a Udemy
+        Course, ChatGPT, and Elements From Other Well Designed Websites
       </h3>
-      <hr className="mt-8"></hr>
+      {/* <hr className="mt-8"></hr> */}
+      <hr className="mt-8 w-[64.5rem]"></hr>
       <div className="flex items-start justify-between">
-        <IconsWithText leftText={date} className="mt-4 " />
+        <IconsWithText leftText={date} className="mt-4" />
         <div className="mt-2 flex flex-wrap xs:w-[175px]">
-          
-        <a
-            className="xs:pr-[10px] pr-[20px] hover:opacity-70"
+          <a
+            className="xs:pr-[10px] pr-[30px] hover:opacity-70"
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/sadovsd/semantic-scholar-visualizer"
+            href="https://github.com/sadovsd/react-portfolio-website"
           >
             <FaCode className="inline mr-2 text-3xl" />
             <span className="ml-0 leading-none whitespace-nowrap font-medium">
               Code
             </span>
           </a>
-          
-          <a
-            className="xs:pr-[10px] pr-[20px] hover:opacity-70"
-            target="_blank"
-            rel="noreferrer"
-            href="https://medium.com/@sadovsd/visualizing-the-sea-of-llm-research-published-in-2023-af40298adf4e"
-          >
-            <LuBookOpen className="inline mr-2 text-3xl" />
-            <span className="ml-0 leading-none whitespace-nowrap font-medium">
-              Article
-            </span>
-          </a>
-
-
-            <a
-              className="xs:pr-[10px] hover:opacity-70"
-              target="_blank"
-              rel="noreferrer"
-              href="https://davydsadovskyy.shinyapps.io/llm-papers-2023-dashboard/"
-            >
-            <MdMonitor className="inline mr-2 text-3xl" />
-            <span className="ml-0 leading-none whitespace-nowrap font-medium">
-              Use App
-            </span>
-          </a>
         </div>
       </div>
-      <hr className="w-[65rem] my-2"></hr>
+      <hr className="w-[64.5rem] my-2"></hr>
 
       {/* <div className='mt-20 mb-40'>
                 <ReactPlayer
@@ -96,4 +67,4 @@ const Project1 = () => {
   );
 };
 
-export default Project1;
+export default Project6;

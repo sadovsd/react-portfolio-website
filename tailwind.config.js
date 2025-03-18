@@ -29,6 +29,7 @@ module.exports = {
       roman: 'upper-roman'
     },
     screens: {
+      xxs: {'max': '425px'},
       xs: {'max': '639px'},
       // => @media (max-width: 639px) { ... }
       ssm: '320px',

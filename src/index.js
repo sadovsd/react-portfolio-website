@@ -12,6 +12,8 @@ import Project2 from './components/projectArticles/Project2';
 import Project3 from './components/projectArticles/Project3';
 import Project4 from './components/projectArticles/Project4';
 import Project5 from './components/projectArticles/Project5';
+import Project6 from './components/projectArticles/Project6';
+import Project7 from './components/projectArticles/Project7';
 import Applications from './components/headerPages/Applications';
 import Project3App from './components/projectApplications/flaskSASCpiViewer/project3App';
 import reportWebVitals from './reportWebVitals';
@@ -31,6 +33,8 @@ root.render(
         <Route path='/projects/project3' element={<Footer><Header><Project3 /></Header></Footer>} />
         <Route path='/projects/project4' element={<Footer><Header><Project4 /></Header></Footer>} />
         <Route path='/projects/project5' element={<Footer><Header><Project5 /></Header></Footer>} />
+        <Route path='/projects/project6' element={<Footer><Header><Project6 /></Header></Footer>} />
+        <Route path='/projects/project7' element={<Footer><Header><Project7 /></Header></Footer>} />
         <Route path='/applications/flaskSASCpiViewer' element={<Footer><Header><Project3App /></Header></Footer>} />
       </Routes>
   </HashRouter>

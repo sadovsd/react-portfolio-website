@@ -420,7 +420,7 @@ function Project3App() {
   return (
     // <div className='container m-10 bg-blue-200'>
     <div>
-      <div className="container mt-[4rem] flex flex-col items-center">
+      <div className={`container mt-[4rem] flex flex-col items-center ${!csvData ? "mb-[350px]" : ""}`}>
         <h1 className="mb-24">SAS Consumer Price Index Trend Viewer</h1>
 
         {/* Information about the app on the left and the form on the right */}
@@ -430,9 +430,6 @@ function Project3App() {
           {/* Information about the app */}
           <div className="mb-16 text-[1.9rem] leading-relaxed">
             <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-              <li>
-                Since SASpy is not meant for production builds, the SAS sessions sometimes fail to connect, leading to retries and up to a ~12 second response time. The normal response time is ~4 seconds, though.
-              </li>
               <li>
                 The data is seasonally unadjusted and is the U.S average.
               </li>
@@ -531,7 +528,7 @@ function Project3App() {
                             !isItemCodeInSeriesInfo(form[index].itemCode)
                               ? "cursor-not-allowed"
                               : ""
-                          } sm:w-[250px] ${
+                          } ${form.length < 2 ? "sm:w-[250px]" : ""} ${
                             form.length <= 1 ? "xs:w-[250px]" : "w-[202px]"
                           } border-[#add8e6] rounded-md`}
                         >
@@ -696,9 +693,6 @@ function Project3App() {
             </div>
           </form>
         </div>
-      </div>
-      <div className="w-full">
-        {/* Loading Spinner and subsequent cpi trend graphs */}
         {isLoading ? (
           <div className="mt-[8rem] flex flex-col justify-center items-center">
             <PropagateLoader color="#3366CC" size={25} />
@@ -708,7 +702,11 @@ function Project3App() {
           <div className="text-red-600">
             Error occurred while fetching data.
           </div>
-        ) : csvData ? (
+        ) : null}
+      </div>
+      <div className="w-full">
+        {/* Loading Spinner and subsequent cpi trend graphs */}
+        {!isLoading && csvData ? (
           // render each graph based on the keys in the csv json data from backend
           <div className="mt-[50px] flex flex-wrap w-full justify-center">
             {Object.keys(JSON.parse(csvData)).map((key, index) => (
