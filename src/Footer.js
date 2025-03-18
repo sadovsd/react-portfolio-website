@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   GithubIcon,
   LinkedinIcon,
@@ -8,15 +8,15 @@ import {
 } from './icons';
 
 const Footer = ({ children }) => {
-  const [copied, setCopied] = useState(false);
+  // const [setCopied] = useState(false);
 
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText('ua.sadovskyy [at] gmail [dot] com');
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 1600);
-  };
+  // const handleCopyEmail = () => {
+  //   navigator.clipboard.writeText('ua.sadovskyy [at] gmail [dot] com');
+  //   setCopied(true);
+  //   setTimeout(() => {
+  //     setCopied(false);
+  //   }, 1600);
+  // };
 
   return (
     // Make sure the footer appears at very bottom of screen
