@@ -270,40 +270,40 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 import { RiReactjsFill } from "react-icons/ri";
 // import { GithubIcon, LinkedinIcon, MediumIcon } from "../../icons";
 
-const TechUsed = ({ tech }) => (
-  <div>
-    <div className="flex">
-      <div className="bg-green-600 flex items-center justify-center min-w-[4rem] min-h-[4rem] w-16 h-16 rounded-full">
-        {tech.name.startsWith("Tailwind") && (
-          <BiLogoTailwindCss size={25} className="text-white" />
-        )}
-        {tech.name.startsWith("React") && (
-          <RiReactjsFill size={25} className="text-white" />
-        )}
-        {tech.name.startsWith("Azure") && (
-          <img
-            width={25}
-            height={25}
-            src={"./images/azure.png"}
-            alt="Azure logo"
-          />
-        )}
-        {tech.name.startsWith("Midjourney") && (
-          <img
-            width={25}
-            height={25}
-            src={"./images/midjourneyWhite.png"}
-            alt="Midjourney logo"
-          />
-        )}
-      </div>
-      <div className="ml-6">
-        <h3 className="font-bold">{tech.name}</h3>
-        <p>{tech.description}</p>
-      </div>
-    </div>
-  </div>
-);
+// const TechUsed = ({ tech }) => (
+//   <div>
+//     <div className="flex">
+//       <div className="bg-green-600 flex items-center justify-center min-w-[4rem] min-h-[4rem] w-16 h-16 rounded-full">
+//         {tech.name.startsWith("Tailwind") && (
+//           <BiLogoTailwindCss size={25} className="text-white" />
+//         )}
+//         {tech.name.startsWith("React") && (
+//           <RiReactjsFill size={25} className="text-white" />
+//         )}
+//         {tech.name.startsWith("Azure") && (
+//           <img
+//             width={25}
+//             height={25}
+//             src={"./images/azure.png"}
+//             alt="Azure logo"
+//           />
+//         )}
+//         {tech.name.startsWith("Midjourney") && (
+//           <img
+//             width={25}
+//             height={25}
+//             src={"./images/midjourneyWhite.png"}
+//             alt="Midjourney logo"
+//           />
+//         )}
+//       </div>
+//       <div className="ml-6">
+//         <h3 className="font-bold">{tech.name}</h3>
+//         <p>{tech.description}</p>
+//       </div>
+//     </div>
+//   </div>
+// );
 
 class Home extends Component {
   render() {
