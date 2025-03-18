@@ -96,7 +96,9 @@ const Header = ({ children }) => {
         ></div>
       </div>
       {/* <div className="flex justify-between shadow-lg ssm:pr-4 ssm:pl-8 sm:px-16 py-10 items-center"> */}
-      <div className="flex justify-between shadow-lg ssm:px-40 sm:px-48 py-10 items-center">
+      {/* <div className="flex justify-between shadow-lg ssm:px-20 sm:px-48 py-10 items-center"> */}
+      <div className="flex justify-between shadow-lg py-10 items-center [@media(min-width:150px)]:px-20 [@media(min-width:640px)]:px-20 [@media(min-width:900px)]:px-48">
+
 
         <div  className="">
           <div className="flex items-center">

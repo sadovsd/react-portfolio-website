@@ -1,23 +1,28 @@
 import React, { Component } from "react";
-import midjourney from "../../assets/midjourney.png";
+// import midjourney from "../../assets/midjourney.png";
+import midjourney2 from "../../assets/midjourney.png";
 import { motion } from "framer-motion";
 
 
 class Home extends Component {
   render() {
     return (
+      // className="[@media(min-width:150px)]:px-20 [@media(min-width:640px)]:px-20 [@media(min-width:900px)]:px-48"
+
       <div className="container">
       {/* <div className="container min-h-screen flex flex-col justify-between"> */}
 
 
-        <div className="flex flex-col md:flex-row m-auto md:m-8 md:mr-0 ssm:mt-0">
+        <div 
+        className="flex flex-col md:flex-row m-auto md:m-8 md:mr-0 ssm:mt-0"
+        >
           <motion.div
             className="md:w-[42%] xl:ml-40"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1.5 } }}
             exit={{ opacity: 0, transition: { duration: 1.5 } }}
           >
-            <div className="mt-60 xs:mt-28">
+            <div className="mt-52 xs:mt-28">
               <div>
                 <h1 className="whitespace-nowrap ssm:px-1 xxs:!text-[8vw] xs:text-[40px] sm:text-[60px] md:text-[30px] lg:text-[35px] xl:text-[42px] 2xl:text-[5rem] md:mb-0 ssm:text-center md:text-left">
                   DAVYD SADOVSKYY
@@ -42,13 +47,15 @@ class Home extends Component {
             </div>
           </motion.div>
           <motion.div
-            className="md:w-[58%] mt-24 flex justify-center mr-40 xs:mx-20"
+            className="md:w-[54%] mt-0 flex justify-center mr-40 xs:mx-20"
+            // className="hidden md:block md:w-[80%] mt-24 justify-center mr-40 xs:mx-20"
+
             initial={{ opacity: 0, x: 140 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 1.5 } }}
             exit={{ opacity: 0, x: -100 }}
           >
             <img
-              src={midjourney}
+              src={midjourney2}
               className="max-w-[90%] ssm:mr-0 md:mr-[-100px] object-contain"
               alt="Midjourney Generated Illustration"
             />
