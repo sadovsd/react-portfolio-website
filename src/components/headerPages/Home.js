@@ -24,9 +24,22 @@ class Home extends Component {
           >
             <div className="mt-52 xs:mt-28">
               <div>
-                <h1 className="whitespace-nowrap ssm:px-1 xxs:!text-[8vw] xs:text-[40px] sm:text-[60px] md:text-[30px] lg:text-[35px] xl:text-[42px] 2xl:text-[5rem] md:mb-0 ssm:text-center md:text-left">
+
+                {/* <h1 className="whitespace-nowrap ssm:px-1 xxs:!text-[8vw] xs:text-[40px] sm:text-[60px] md:text-[30px] lg:text-[35px] xl:text-[42px] 2xl:text-[5rem] md:mb-0 ssm:text-center md:text-left">
                   DAVYD SADOVSKYY
+                </h1> */}
+                <h1 className=" ml-[1px]
+                    flex justify-between
+                    w-full whitespace-nowrap
+                    xs:text-[40px] sm:text-[60px]
+                    md:text-[30px] lg:text-[35px]
+                    xl:text-[42px] 2xl:text-[5rem]
+                    ssm:text-center md:text-left
+                ">
+                  <span>DAVYD</span>
+                  <span>SADOVSKYY</span>
                 </h1>
+
                 <h3 className="heading-with-line ml-2 font-semibold py-[10px] text-[21px]">
                   Data Scientist
                 </h3>

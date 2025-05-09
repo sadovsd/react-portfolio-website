@@ -44,7 +44,8 @@ const Footer = ({ children }) => {
           <MediumIcon className="h-12 w-12 text-neutral-950 hover:text-neutral-500" />
         </a>
 
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@AgingHub">
+        {/* <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@AgingHub"> */}
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/">
           <YoutubeIcon className="h-10 w-10 text-red-600 hover:text-neutral-500" />
         </a>
 
